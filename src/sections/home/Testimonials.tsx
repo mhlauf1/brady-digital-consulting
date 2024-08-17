@@ -63,7 +63,7 @@ const Testimonials = () => {
         <div className="flex flex-col items-center">
           <div className={`mt-36 fade ${fade ? "in" : "out"}`}>
             <blockquote className=" lg:w-[70%] mx-auto testimonial  text-neutral-600">
-              "{quote}"
+              &quot;{quote}&quot;
             </blockquote>
             <p className="mt-12 text-center text-neutral-500">- {name}</p>
           </div>
