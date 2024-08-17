@@ -16,7 +16,7 @@ const Benefits = () => {
             <h3 className="text-neutral-700 mb-6">
               Empowering Success with Proven Results{" "}
             </h3>
-            <p className="w-[50ch] text-black/70 mb-8">
+            <p className="md:w-[50ch] text-black/70 mb-8">
               At Brady Digital Consulting, our results speak for themselves. We
               are committed to driving growth and enhancing profitability for
               our clients through our expert strategies and data-driven

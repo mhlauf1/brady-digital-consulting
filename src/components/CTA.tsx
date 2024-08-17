@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CTA = () => {
   return (
-    <section className="bg-neutral-800 px-8 relative flex-col gap-10 mx-4 my-8 rounded-xl flex items-center justify-center py-36 text-white overflow-hidden">
+    <section className="bg-neutral-800 px-4 md:px-8 relative flex-col gap-10 mx-4 my-8 rounded-xl flex items-center justify-center py-32 md:py-36 text-white overflow-hidden">
       <h2 className="lg:w-[16ch] text-[2.5rem] md:text-[3rem] lg:text-[5rem] text-center relative z-10">
         Ready to Transform Your Brand?
       </h2>

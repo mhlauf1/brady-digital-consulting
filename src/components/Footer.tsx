@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex lg:flex-col flex-col-reverse items-center justify-center py-12 gap-6 bg-neutral-900">
+    <footer className="flex lg:flex-col flex-col-reverse px-4 md:items-center justify-center py-12 md:gap-6 bg-neutral-900">
       <img src="./white-logo.png" alt="Footer logo" height={82} width={116} />
-      <ul className="flex mb-8 lg:mb-0 flex-col lg:flex-row items-center gap-8 lg:gap-20 mr-[-12px] text-white/70 hovert:text-white">
+      <ul className="flex mb-8 text-lg lg:mb-0 flex-col lg:flex-row md:items-center gap-5 lg:gap-20 mr-[-12px] text-white/70 hovert:text-white">
         <li>
           <Link href="/">Home</Link>
         </li>

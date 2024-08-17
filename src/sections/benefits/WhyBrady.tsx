@@ -54,7 +54,7 @@ const whyBradyData = [
 
 const Item = ({ image, title, description }: ItemProps) => (
   <div className="relative">
-    <div className="h-[700px] flex flex-col justify-end p-8 text-white mt-12 w-auto">
+    <div className="h-[500px] md:h-[700px] flex flex-col justify-end px-4 py-8 md:p-8 text-white mt-12 w-auto">
       <div className="bg-gradient-to-b from-neutral-300/40 to-neutral-900/50 -z-1 absolute top-0 left-0 right-0 bottom-0 rounded-xl"></div>
       <Image
         src={image}

@@ -74,7 +74,7 @@ const HowItWorks = () => {
             <h3 className="text-neutral-800 mt-6 mb-4 lg:mb-6">
               In-House Marketing Advice{" "}
             </h3>
-            <p className="text-neutral-600 w-[50ch] mb-6 lg:mb-8">
+            <p className="text-neutral-600 md:w-[50ch] mb-6 lg:mb-8">
               Benefit from our expert guidance tailored to your in-house
               marketing efforts. We provide actionable advice and insights to
               enhance your strategies and achieve better results.

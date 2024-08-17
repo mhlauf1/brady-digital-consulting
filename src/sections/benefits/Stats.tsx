@@ -32,7 +32,7 @@ type StatProps = {
 };
 
 const Stat = ({ title, description, caption }: StatProps) => (
-  <div className="p-8 rounded-xl flex flex-col gap-1 md:gap-2">
+  <div className="rounded-xl flex flex-col gap-1 md:gap-2">
     <p className="text-neutral-600">{caption}</p>
     <div className="h-[1px] w-full bg-black/30"></div>
 

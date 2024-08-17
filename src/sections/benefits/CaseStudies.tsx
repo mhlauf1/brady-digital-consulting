@@ -89,7 +89,7 @@ const CaseStudy = ({
       color
     )}`}
   >
-    <div className="flex flex-col p-8 flex-1 justify-between">
+    <div className="flex flex-col py-8 px-6 md:p-8 flex-1 justify-between">
       <span className="font-instrument text-neutral-800 text-3xl md:text-5xl">
         {company}
       </span>
@@ -120,7 +120,7 @@ const CaseStudy = ({
 
 const CaseStudies = () => {
   return (
-    <section className="max-w-screen-2xl px-8 flex flex-col gap-8 mx-auto py-36">
+    <section className="max-w-screen-2xl px-4 md:px-8 flex flex-col gap-8 mx-auto py-24 md:py-36">
       {caseStudyData.map((item) => (
         <div key={item.id}>
           <CaseStudy
