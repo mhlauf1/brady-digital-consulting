@@ -11,7 +11,7 @@ const CTA = () => {
       <p className="lg:w-[74ch] text-neutral-300 leading-[160%] text-center relative z-10">
         Get started with Brady Digital Consulting today and see the difference
         expert strategies and personalized support can make. Contact us now to
-        unlock your brand's full potential.
+        unlock your brand&apos;s full potential.
       </p>
       <div className="flex gap-4 relative z-10">
         <Button>Get Started Today</Button>

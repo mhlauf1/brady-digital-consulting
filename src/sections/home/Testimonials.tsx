@@ -24,7 +24,7 @@ const testimonials = [
   {
     id: 4,
     quote:
-      "Brady Digital Consulting's strategic guidance was a game-changer for our brand's growth. We trust them completely for all our ecommerce needs.",
+      "Brady Digital Consulting and their strategic guidance was a game-changer for our brands growth. We trust them completely for all our ecommerce needs.",
     name: "Emily Davis, Operations Manager at GHI Inc.",
   },
   {

@@ -88,11 +88,13 @@ const HowItWorks = () => {
         </div>
         <div className="h-auto flex flex-col mt-12 lg:mt-0 gap-4 py-16 px-8 lg:p-16 rounded-s-xl bg-[radial-gradient(#666666,#222222,#666666)]">
           {StepData.map((item) => (
-            <Item
-              Icon={item.icon}
-              title={item.title}
-              description={item.description}
-            />
+            <div key={item.id}>
+              <Item
+                Icon={item.icon}
+                title={item.title}
+                description={item.description}
+              />
+            </div>
           ))}
         </div>
       </div>
