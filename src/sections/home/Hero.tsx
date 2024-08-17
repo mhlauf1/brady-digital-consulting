@@ -53,7 +53,7 @@ const Hero = () => {
           <div className="flex flex-1 mt-12 md:mt-0 gap-8 md:gap-20 flex-col">
             <p className="md:w-[85%]">
               At Brady Digital Consulting, we are dedicated to transforming your
-              brand's Amazon and e-commerce presence. Our team of seasoned
+              brand&apos;s Amazon and e-commerce presence. Our team of seasoned
               experts combines industry knowledge with innovative strategies to
               deliver unparalleled results.
             </p>
