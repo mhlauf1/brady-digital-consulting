@@ -56,7 +56,7 @@ const Testimonials = () => {
   const { quote, name } = testimonials[currentIndex];
 
   return (
-    <section className="bg-[#D2D8D7] mt-[-100px] rounded-t-[50px] relative ">
+    <section className="bg-[#D2D8D7] mt-[-100px] rounded-t-xl relative ">
       <div className="py-20 lg:py-36 max-w-screen-2xl px-8 mx-auto">
         <div className="h-[1px] mb-4 w-full bg-neutral-400"></div>
         <p>Don&apos;t just take our word for it. Take theirs.</p>

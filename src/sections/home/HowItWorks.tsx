@@ -63,7 +63,7 @@ const StepData = [
 
 const HowItWorks = () => {
   return (
-    <section className="rounded-t-[50px] mt-[-100px] z-1000 relative bg-[#F1F1E8] py-24 lg:py-48 pb-72">
+    <section className="rounded-t-xl mt-[-100px] z-1000 relative bg-[#F1F1E8] py-24 lg:py-48 pb-72">
       <div className="justify-between flex-col lg:flex-row flex ">
         <div className="flex flex-1 flex-col lg:pl-[10vw] px-8 lg:p-0 lg:mx-auto justify-between">
           <h2 className="text-neutral-800 w-[13ch]">

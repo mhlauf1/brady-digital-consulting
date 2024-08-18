@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className=" w-full py-3  z-100">
-      <header className="w-full flex justify-between  items-center px-4  max-w-screen-2xl mx-auto">
+    <div className="relative">
+      <header className="w-full py-4 flex justify-between  items-center px-4 max-w-screen-2xl mx-auto z-10">
         <Link href="/">
           <img
             src="./color-logo.png"
@@ -14,20 +14,20 @@ const Navbar = () => {
           />
         </Link>
 
-        <ul className="md:flex items-center hidden relative text-neutral-700 text-sm gap-8">
-          <li className="hover:text-white/70 cursor-pointer transition">
+        <ul className="md:flex hidden  items-center text-neutral-900 text-sm  gap-8">
+          <li className="hover:text-neutral-500 transition">
             <Link href="/about">About</Link>
           </li>
-          <li className="hover:text-white/70 cursor-pointer transition">
+          <li className="hover:text-neutral-500 transition">
             <Link href="/how-it-works">How It Works</Link>
           </li>
-          <li className="hover:text-white/70 cursor-pointer transition">
+          <li className="hover:text-neutral-500 transition">
             <Link href="/benefits">Benefits</Link>
           </li>
-          <li className="hover:text-white/70 cursor-pointer transition">
+          <li className="hover:text-neutral-500 transition">
             <Link href="/services">Services</Link>
           </li>
-          <li className="hover:text-white/70  transition">
+          <li className="hover:text-neutral-500 transition">
             <Link href="/contact">Contact Us</Link>
           </li>
         </ul>

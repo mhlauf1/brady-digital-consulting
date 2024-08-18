@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Instrument_Serif } from "next/font/google";
-import "../globals.css";
+import { Instrument_Serif } from "next/font/google";
+import "./globals.css";
 import localFont from "next/font/local";
 import Footer from "@/components/Footer";
-import SubNavbar from "@/components/SubNavbar";
+import Navbar from "@/components/Navbar";
 
 const instrument = Instrument_Serif({
   subsets: ["latin"],
@@ -12,7 +12,7 @@ const instrument = Instrument_Serif({
 });
 
 const helvetica = localFont({
-  src: "../../fonts/Helvetica.ttf",
+  src: "../fonts/Helvetica.ttf",
   variable: "--font-helvetica",
   display: "swap",
   preload: true,
@@ -33,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${helvetica.className} overflow-x-hidden ${instrument.variable}`}
       >
-        <SubNavbar />
+        <Navbar />
         {children}
         <Footer />
       </body>

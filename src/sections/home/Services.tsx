@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <section className="rounded-t-[50px]  mt-[-100px] z-1000 relative bg-[#282B33] py-36 md:py-48">
+    <section className="rounded-t-xl  mt-[-100px] z-1000 relative bg-[#282B33] py-36 md:py-48">
       <div className="max-w-screen-2xl px-8 justify-between flex-col gap-12 lg:gap-8 lg:flex-row flex mx-auto">
         <div className="flex flex-1 flex-col  justify-between">
           <h2 className="text-white w-[95%] lg:w-[16ch]">
