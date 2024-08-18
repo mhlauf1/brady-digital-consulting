@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="bg-black/70 absolute top-0 left-0 right-0 bottom-0"></div>
         <div className="relative z-50 flex flex-col items-center pt-36 text-center h-full text-white px-4">
           <div className="flex flex-col h-full px-8 items-center">
-            <div className="relative rounded-full transition px-3 py-1 text-sm leading-6 text-gray-300 ring-1 ring-white/10 hover:ring-white/20">
+            <div className="relative rounded-full transition px-3 py-1 text-xs md:text-sm leading-6 text-gray-300 ring-1 ring-white/10 hover:ring-white/20">
               Leading the Way in E-commerce Excellence.{" "}
               <a href="#" className="font-semibold text-white">
                 <span aria-hidden="true" />
@@ -34,7 +34,7 @@ const Hero = () => {
                 <Button dark>Contact Us</Button>
               </Link>
             </div>
-            <div className="pt-12 md:pt-6 flex justify-center space-x-6 w-full md:space-x-12 text-white/70 text-sm">
+            <div className="pt-12 pb-8 md:pt-6 flex justify-center space-x-6 w-full md:space-x-12 text-white/70 text-sm">
               <div className="flex flex-col md:flex-row md:w-full w-[14ch] items-center gap-3">
                 <FaRocket /> <span>Online Sales Growth</span>
               </div>
