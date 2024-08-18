@@ -35,17 +35,17 @@ const Hero = () => {
               </Link>
             </div>
             <div className="pb-8 md:pt-6 md:grid flex items-center justify-center md:grid-cols-3  space-x-6 w-full md:space-x-12 text-white/70">
-              <div className="flex flex-col md:flex-row md:w-full w-[14ch] items-center gap-3">
+              <div className="flex flex-col md:flex-row md:w-full w-[12ch] items-center gap-3">
                 <FaRocket />{" "}
                 <span className="text-xs md:text-sm">Online Sales Growth</span>
               </div>
-              <div className="flex flex-col md:flex-row md:w-full w-[14ch] items-center gap-3">
+              <div className="flex flex-col md:flex-row md:w-full w-[12ch] items-center gap-3">
                 <FaChartBar />{" "}
                 <span className="text-xs md:text-sm">
                   40% Conversion Rate Boost
                 </span>
               </div>
-              <div className="flex flex-col  md:flex-row md:w-full w-[14ch] items-center gap-3">
+              <div className="flex flex-col  md:flex-row md:w-full w-[12ch] items-center gap-3">
                 <FaChartLine />{" "}
                 <span className="text-xs md:text-sm">278% Session Growth</span>
               </div>
