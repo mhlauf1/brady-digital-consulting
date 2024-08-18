@@ -9,12 +9,12 @@ const Hero = () => {
   return (
     <>
       <section
-        className="-z-10 bg-cover bg-center h-[95vh]"
+        className="-z-10 bg-cover bg-center h-[100vh]"
         style={{ backgroundImage: "url('/hero-buildings.png')" }}
       >
-        <div className="bg-black/70 absolute top-0 left-0 right-0 bottom-0"></div>
+        <div className="bg-black/70 absolute top-0 left-0 h-full right-0 bottom-0"></div>
         <div className="relative z-50 flex flex-col items-center pt-36 text-center h-full text-white px-4">
-          <div className="flex flex-col h-full px-8 items-center">
+          <div className="flex flex-col h-full px-20 items-center">
             <div className="relative rounded-full transition px-3 py-1 text-xs md:text-sm leading-6 text-gray-300 ring-1 ring-white/10 hover:ring-white/20">
               Leading the Way in E-commerce Excellence.{" "}
               <a href="#" className="font-semibold text-white">
@@ -26,7 +26,7 @@ const Hero = () => {
             <h1 className="w-[16ch] home-heading font-instrument mt-12 mb-16 ">
               Amazon Partners. Redefined.
             </h1>
-            <div className="flex flex-wrap relative z-100 items-center gap-6 mb-12">
+            <div className="flex flex-wrap relative z-100 items-center gap-6 mb-20">
               <Link href="/how-it-works">
                 <Button>How It Works</Button>
               </Link>
@@ -34,15 +34,20 @@ const Hero = () => {
                 <Button dark>Contact Us</Button>
               </Link>
             </div>
-            <div className="pt-12 pb-8 md:pt-6 flex justify-center space-x-6 w-full md:space-x-12 text-white/70 text-sm">
+            <div className="pb-8 md:pt-6 md:grid flex items-center justify-center md:grid-cols-3  space-x-6 w-full md:space-x-12 text-white/70">
               <div className="flex flex-col md:flex-row md:w-full w-[14ch] items-center gap-3">
-                <FaRocket /> <span>Online Sales Growth</span>
+                <FaRocket />{" "}
+                <span className="text-xs md:text-sm">Online Sales Growth</span>
               </div>
               <div className="flex flex-col md:flex-row md:w-full w-[14ch] items-center gap-3">
-                <FaChartBar /> <span>40% Conversion Rate Boost</span>
+                <FaChartBar />{" "}
+                <span className="text-xs md:text-sm">
+                  40% Conversion Rate Boost
+                </span>
               </div>
               <div className="flex flex-col  md:flex-row md:w-full w-[14ch] items-center gap-3">
-                <FaChartLine /> <span>278% Session Growth</span>
+                <FaChartLine />{" "}
+                <span className="text-xs md:text-sm">278% Session Growth</span>
               </div>
             </div>
           </div>
