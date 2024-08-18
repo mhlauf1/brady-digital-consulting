@@ -9,16 +9,16 @@ const Hero = () => {
   return (
     <>
       <section
-        className="relative -z-10 bg-cover bg-center h-[95vh]"
+        className="-z-10 bg-cover bg-center h-[95vh]"
         style={{ backgroundImage: "url('/hero-buildings.png')" }}
       >
         <div className="bg-black/70 absolute top-0 left-0 right-0 bottom-0"></div>
-        <div className="relative z-50 flex flex-col items-center pt-64 md:pt-48 justify-between text-center h-full text-white px-4">
-          <div className="flex flex-col px-8 items-center">
+        <div className="relative z-50 flex flex-col items-center pt-64 md:pt-36 text-center h-full text-white px-4">
+          <div className="flex flex-col h-full px-8 items-center">
             <div className="relative rounded-full transition px-3 py-1 text-sm leading-6 text-gray-300 ring-1 ring-white/10 hover:ring-white/20">
               Leading the Way in E-commerce Excellence.{" "}
               <a href="#" className="font-semibold text-white">
-                <span aria-hidden="true" className="absolute inset-0" />
+                <span aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
@@ -26,7 +26,15 @@ const Hero = () => {
             <h1 className="w-[16ch] home-heading font-instrument mt-12 mb-16 ">
               Amazon Partners. Redefined.
             </h1>
-            <div className="pt-20 md:pt-6 flex justify-center space-x-6 w-full md:space-x-12 text-white/70 text-sm">
+            <div className="flex flex-wrap relative z-100 items-center gap-6 mb-12">
+              <Link href="/how-it-works">
+                <Button>How It Works</Button>
+              </Link>
+              <Link href="/contact">
+                <Button dark>Contact Us</Button>
+              </Link>
+            </div>
+            <div className="pt-12 md:pt-6 flex justify-center space-x-6 w-full md:space-x-12 text-white/70 text-sm">
               <div className="flex flex-col md:flex-row md:w-full w-[14ch] items-center gap-3">
                 <FaRocket /> <span>Online Sales Growth</span>
               </div>

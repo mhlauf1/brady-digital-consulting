@@ -13,7 +13,7 @@ const Hero = () => {
           <h1 className="capitalize text-center md:text-start md:w-[16ch] text-neutral-900 mt-12 mb-8">
             Learn How Brady Can Serve You
           </h1>
-          <p className=" md:w-[48ch] text-center md:text-start mb-8 text-neutral-500 leading-[160%] text-lg">
+          <p className=" md:w-[48ch] text-center md:text-start mb-8 text-neutral-500 leading-[160%] md:text-lg">
             Experience Unmatched Growth and Success with Our Expertise
           </p>
           <Button dark>Book a call</Button>

@@ -18,7 +18,7 @@ const Hero = () => {
         <h1 className="capitalize md:w-[25ch] my-12  text-center">
           Comprehensive Amazon Services for Exceptional Growth
         </h1>
-        <p className="text-white/70 md:w-[44ch] leading-[160%] text-lg text-center">
+        <p className="text-white/70 md:w-[44ch] leading-[160%] md:text-lg text-center">
           Unlock Your Brand&apos;s Potential with Our Full-Spectrum E-commerce
           Solutions{" "}
         </p>
