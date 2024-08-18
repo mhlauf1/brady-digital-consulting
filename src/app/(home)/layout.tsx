@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${helvetica.className} overflow-x-hidden ${instrument.variable}`}
+        className={`${helvetica.className} relative overflow-x-hidden ${instrument.variable}`}
       >
         <Navbar />
         {children}

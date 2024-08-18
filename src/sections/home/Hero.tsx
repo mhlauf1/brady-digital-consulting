@@ -4,16 +4,17 @@ import { FaRocket, FaChartLine } from "react-icons/fa6";
 import { FaChartBar } from "react-icons/fa";
 import Button from "@/components/Button";
 import Link from "next/link";
+import HeroButtons from "@/components/HeroButtons";
 
 const Hero = () => {
   return (
     <>
       <section
-        className="-z-10 bg-cover bg-center h-[100vh]"
+        className="-z-100 relative bg-cover md:mx-4 mb-8 md:rounded-xl bg-center h-[100vh]"
         style={{ backgroundImage: "url('/hero-buildings.png')" }}
       >
-        <div className="bg-black/70 absolute top-0 left-0 h-full right-0 bottom-0"></div>
-        <div className="relative z-50 flex flex-col items-center pt-36 text-center h-full text-white px-4">
+        <div className="bg-black/70 absolute md:rounded-xl top-0 left-0 h-full right-0 bottom-0"></div>
+        <div className="relative z-50 flex flex-col items-center pt-24 text-center h-full text-white px-4">
           <div className="flex flex-col h-full px-20 items-center">
             <div className="relative rounded-full transition px-3 py-1 text-xs md:text-sm leading-6 text-gray-300 ring-1 ring-white/10 hover:ring-white/20">
               Leading the Way in E-commerce Excellence.{" "}
@@ -26,14 +27,7 @@ const Hero = () => {
             <h1 className="w-[16ch] home-heading font-instrument mt-12 mb-16 ">
               Amazon Partners. Redefined.
             </h1>
-            <div className="flex flex-wrap relative z-100 items-center gap-6 mb-20">
-              <Link href="/how-it-works">
-                <Button>How It Works</Button>
-              </Link>
-              <Link href="/contact">
-                <Button dark>Contact Us</Button>
-              </Link>
-            </div>
+            <HeroButtons />
             <div className="pb-8 md:pt-6 md:grid flex items-center justify-center md:grid-cols-3  space-x-6 w-full md:space-x-12 text-white/70">
               <div className="flex flex-col md:flex-row md:w-full w-[12ch] items-center gap-3">
                 <FaRocket />{" "}
@@ -51,7 +45,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="h-[1px] mb-24 max-w-screen-2xl w-full bg-white/50"></div>
+          <div className="h-[1px] mb-32 max-w-screen-2xl w-full bg-white/50"></div>
         </div>
       </section>
       <div className="relative  text-white px-8 pb-72 pt-48">

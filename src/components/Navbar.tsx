@@ -3,31 +3,31 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="relative">
-      <header className="w-full absolute top-0 right-0 left-0 py-2 flex justify-between  items-center px-4  max-w-screen-2xl mx-auto z-10">
+    <div className=" w-full py-3  z-100">
+      <header className="w-full flex justify-between  items-center px-4  max-w-screen-2xl mx-auto">
         <Link href="/">
           <img
-            src="./white-logo.png"
+            src="./color-logo.png"
             alt="Brady Digital Consulting Logo"
             height={92}
             width={116}
           />
         </Link>
 
-        <ul className="md:flex items-center hidden text-neutral-100 text-sm  gap-8">
-          <li className="hover:text-white/70 transition">
+        <ul className="md:flex items-center hidden relative text-neutral-700 text-sm gap-8">
+          <li className="hover:text-white/70 cursor-pointer transition">
             <Link href="/about">About</Link>
           </li>
-          <li className="hover:text-white/70 transition">
+          <li className="hover:text-white/70 cursor-pointer transition">
             <Link href="/how-it-works">How It Works</Link>
           </li>
-          <li className="hover:text-white/70 transition">
+          <li className="hover:text-white/70 cursor-pointer transition">
             <Link href="/benefits">Benefits</Link>
           </li>
-          <li className="hover:text-white/70 transition">
+          <li className="hover:text-white/70 cursor-pointer transition">
             <Link href="/services">Services</Link>
           </li>
-          <li className="hover:text-white/70 transition">
+          <li className="hover:text-white/70  transition">
             <Link href="/contact">Contact Us</Link>
           </li>
         </ul>
