@@ -13,7 +13,7 @@ const Hero = () => {
         style={{ backgroundImage: "url('/hero-buildings.png')" }}
       >
         <div className="bg-black/70 absolute top-0 left-0 right-0 bottom-0"></div>
-        <div className="relative z-50 flex flex-col items-center pt-64 md:pt-36 text-center h-full text-white px-4">
+        <div className="relative z-50 flex flex-col items-center pt-36 text-center h-full text-white px-4">
           <div className="flex flex-col h-full px-8 items-center">
             <div className="relative rounded-full transition px-3 py-1 text-sm leading-6 text-gray-300 ring-1 ring-white/10 hover:ring-white/20">
               Leading the Way in E-commerce Excellence.{" "}
