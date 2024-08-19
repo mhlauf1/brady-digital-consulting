@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
 type ItemProps = {
@@ -66,21 +69,43 @@ const Item = ({ image, title, description }: ItemProps) => (
       <div className="relative space-y-4">
         <h3 className="font-instrument text-3xl">{title}</h3>
         <div className="h-[1px] w-full bg-white"></div>
-        <p className="text-white/70 leading-[160%]">{description}</p>
+        <p className="text-white/80 text-sm md:text-base leading-[160%]">
+          {description}
+        </p>
       </div>
     </div>
   </div>
 );
 
 const WhyBrady = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
-    <section className="py-36 px-8 max-w-screen-2xl mx-auto">
+    <motion.section
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+      }}
+      className="py-36 px-8 max-w-screen-2xl mx-auto"
+    >
       <div className=" flex flex-col md:flex-row justify-between">
         <div className="flex flex-1 gap-6 md:gap-10 items-start flex-col">
           <h2>Why Choose Brady Digital Consulting?</h2>
         </div>
         <div className="flex flex-1 mt-6 md:mt-0 gap-8 md:gap-20 flex-col">
-          <p className="md:w-[64ch] ml-auto text-neutral-500 leading-[160%]">
+          <p className="md:w-[64ch] text-sm md:text-base ml-auto text-neutral-500 leading-[160%]">
             Our comprehensive suite of services is designed to help brands not
             only sell but thrive in the digital marketplace. By partnering with
             Brady Digital Consulting, you gain access to industry-leading
@@ -100,7 +125,7 @@ const WhyBrady = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

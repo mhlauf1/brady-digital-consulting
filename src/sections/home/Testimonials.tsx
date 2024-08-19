@@ -116,7 +116,7 @@ const Testimonials = () => {
             <h2 className="flex leading-[120%] text-center lg:text-start lg:w-[18ch] ">
               How Clients gained ~$5,00,000 With Brady
             </h2>
-            <p className="flex text-neutral-600  text-center lg:text-start lg:w-[42ch]">
+            <p className="flex text-neutral-600 text-sm md:text-base  text-center lg:text-start lg:w-[42ch]">
               For a smarter approach to investing, with products and services
               they can&apos;t get anywhere else, and real humans accessible when
               they need them.

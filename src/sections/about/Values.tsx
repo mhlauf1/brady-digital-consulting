@@ -1,5 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const valueData = [
   {
@@ -53,7 +56,7 @@ type ValueProps = {
 };
 
 const Value = ({ title, description, icon }: ValueProps) => (
-  <div className="bg-white p-8 rounded-xl flex flex-col gap-3">
+  <div className="bg-white p-6 md:p-8 rounded-xl flex flex-col gap-2 md:gap-3">
     <div className="h-[32px] w-[32px]">
       <Image
         src={icon}
@@ -65,15 +68,36 @@ const Value = ({ title, description, icon }: ValueProps) => (
       />
     </div>
     <h3 className="font-instrument text-3xl mt-4">{title}</h3>
-    <p className="text-sm text-neutral-500 leading-[160%] w-[85%]">
+    <p className="text-sm text-neutral-500 leading-[160%] md:w-[85%]">
       {description}
     </p>
   </div>
 );
 const Values = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
-    <div className="bg-[#F6F7F7] rounded-t-[50px]">
-      <section className="max-w-screen-2xl px-8 flex-col gap-12 py-24 md:py-36 mx-auto flex justify-between">
+    <div className="bg-[#F6F7F7] rounded-t-xl">
+      <motion.section
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+        }}
+        className="max-w-screen-2xl px-8 flex-col gap-12 py-24 md:py-36 mx-auto flex justify-between"
+      >
         <h2>Core Values</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {valueData.map((value) => (
@@ -86,7 +110,7 @@ const Values = () => {
             </div>
           ))}
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

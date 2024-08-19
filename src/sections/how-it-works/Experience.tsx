@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
 const experienceData = [
@@ -32,7 +35,7 @@ type ExperienceProps = {
 };
 
 const ExperienceItem = ({ title, description, icon }: ExperienceProps) => (
-  <div className="bg-white p-8 rounded-xl flex flex-col gap-3">
+  <div className="bg-white p-6 md:p-8 rounded-xl flex flex-col gap-2 md:gap-3">
     <div className="h-[32px] w-[32px]">
       <Image
         src={icon}
@@ -44,15 +47,35 @@ const ExperienceItem = ({ title, description, icon }: ExperienceProps) => (
       />
     </div>
     <h3 className="font-instrument text-3xl mt-4">{title}</h3>
-    <p className="text-sm text-neutral-500 leading-[160%] w-[85%]">
+    <p className="text-sm text-neutral-500 leading-[160%] md:w-[85%]">
       {description}
     </p>
   </div>
 );
 const Experience = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
     <div className="bg-[#F6F7F7]">
-      <section className="max-w-screen-2xl px-8 flex-col  py-36 mx-auto flex justify-between">
+      <motion.section
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+        }}
+        className="max-w-screen-2xl px-8 flex-col py-24 md:py-36 mx-auto flex justify-between"
+      >
         <h2>
           Unmatched Expertise, <br />
           Proven Results
@@ -72,7 +95,7 @@ const Experience = () => {
             </div>
           ))}
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

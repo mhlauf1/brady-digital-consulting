@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
-import Image from "next/image";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const statData = [
   {
@@ -45,14 +47,34 @@ const Stat = ({ title, description, caption }: StatProps) => (
   </div>
 );
 const Stats = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
     <div className="bg-neutral-50 mx-4 rounded-xl">
-      <section className="max-w-screen-2xl px-8 flex-col py-24 md:py-36 mx-auto flex justify-between">
+      <motion.section
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+        }}
+        className="max-w-screen-2xl px-8 flex-col py-24 md:py-36 mx-auto flex justify-between"
+      >
         <h2>
           Empowering Success <br />{" "}
           <span className="text-neutral-400">with Proven Results</span>
         </h2>
-        <p className="text-neutral-500 mb-12 mt-8 lg:w-[40%] leading-[160%]">
+        <p className="text-neutral-500 mb-12 mt-8 lg:w-[40%] text-sm md:text-base leading-[160%]">
           At Brady Digital Consulting, our results speak for themselves. We are
           committed to driving growth and enhancing profitability for our
           clients through our expert strategies and data-driven insights.
@@ -68,7 +90,7 @@ const Stats = () => {
             </div>
           ))}
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

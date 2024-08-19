@@ -1,17 +1,40 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Hero = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
-    <section className="relative pt-20 md:pt-24 mx-4 rounded-xl h-auto">
+    <section className="relative pt-20 md:pt-24 md:mx-4 md:rounded-xl h-auto">
       <Image
         src="/about-hero.png"
         alt="About Page Brady Digital"
         fill
-        className="-z-20 rounded-xl"
+        className="-z-20 md:rounded-xl"
         objectFit="cover"
       />
-      <div className="flex px-8 flex-col relative text-white items-center">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+        }}
+        className="flex px-8 flex-col relative text-white items-center"
+      >
         <span className="border border-white/20 bg-white/10 py-1 text-sm text-neutral-300 px-4 rounded-full">
           About Us
         </span>
@@ -33,7 +56,7 @@ const Hero = () => {
             objectFit="cover"
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

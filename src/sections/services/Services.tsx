@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
 const servicesData = [
@@ -67,7 +70,7 @@ type ServiceProps = {
 };
 
 const Service = ({ title, description, icon }: ServiceProps) => (
-  <div className="bg-white py-8 rounded-xl flex flex-col gap-3">
+  <div className="bg-white py-4 md:py-8 rounded-xl flex flex-col gap-2 md:gap-3">
     <div className="h-[32px] w-[32px]">
       <Image
         src={icon}
@@ -79,25 +82,45 @@ const Service = ({ title, description, icon }: ServiceProps) => (
       />
     </div>
     <h3 className="font-instrument text-3xl mt-4">{title}</h3>
-    <p className="text-sm text-neutral-500 leading-[160%] w-[85%]">
+    <p className="text-sm text-neutral-500 leading-[160%] lg:w-[85%]">
       {description}
     </p>
   </div>
 );
 const Services = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
-    <div className="mt-8">
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+      }}
+      className="mt-8"
+    >
       <section className="max-w-screen-2xl px-8 flex-col py-24 md:py-36 mx-auto flex justify-between">
         <h2>
           Optimization Services: <br />
           Maximize Your Amazon Presence
         </h2>
-        <p className="text-neutral-500 mb-12 mt-8 lg:w-[40%] leading-[160%]">
+        <p className="text-neutral-500 mb-12 mt-8 lg:w-[40%] text-sm md:text-base leading-[160%]">
           Optimize every aspect of your Amazon listings to ensure maximum
           visibility and conversions. Our optimization services are designed to
           make your products stand out in the competitive marketplace.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {servicesData.map((service) => (
             <div key={service.id}>
               <Service
@@ -109,7 +132,7 @@ const Services = () => {
           ))}
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

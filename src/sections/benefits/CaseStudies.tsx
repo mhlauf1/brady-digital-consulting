@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
 const caseStudyData = [
@@ -119,8 +122,28 @@ const CaseStudy = ({
 );
 
 const CaseStudies = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
-    <section className="max-w-screen-2xl px-4 md:px-8 flex flex-col gap-8 mx-auto py-24 md:py-36">
+    <motion.section
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+      }}
+      className="max-w-screen-2xl px-4 md:px-8 flex flex-col gap-8 mx-auto py-24 md:py-36"
+    >
       {caseStudyData.map((item) => (
         <div key={item.id}>
           <CaseStudy
@@ -134,7 +157,7 @@ const CaseStudies = () => {
           />
         </div>
       ))}
-    </section>
+    </motion.section>
   );
 };
 

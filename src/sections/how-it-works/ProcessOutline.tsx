@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
 const processData = [
@@ -53,18 +56,15 @@ type ProcessProps = {
   description: string;
   image: string;
   id: string;
-  reverse?: boolean;
 };
 
-const Process = ({ title, description, image, id, reverse }: ProcessProps) => (
+const Process = ({ title, description, image, id }: ProcessProps) => (
   <div
-    className={`p-8 rounded-xl max-w-screen-2xl mx-auto flex flex-col items-center gap-3 ${
-      reverse ? "md:flex-row-reverse md:pl-32" : "md:flex-row"
-    } bg-gradient-to-r from-[#2a2a2a] to-[#404040] shadow-lg`}
+    className={`p-8  rounded-xl max-w-screen-2xl flex flex-col items-center gap-3  bg-gradient-to-r from-[#2a2a2a] to-[#404040] shadow-lg`}
     style={{ boxShadow: "0 4px 20px rgba(0, 0, 0, 0.5)", borderRadius: "20px" }}
   >
     <div className="flex items-center gap-3 flex-1">
-      <div className="h-auto w-[80vw] md:w-[40vw]">
+      <div className="h-auto w-[80vw] md:w-[25vw]">
         <Image
           src={image}
           alt="Value image"
@@ -88,19 +88,57 @@ const Process = ({ title, description, image, id, reverse }: ProcessProps) => (
 );
 
 const ProcessOutline = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
-    <section className="px-8  bg-[#313131] flex flex-col gap-4 rounded-xl md:rounded-t-[50px] py-24 md:py-36">
-      {processData.map((item) => (
-        <div key={item.id}>
-          <Process
-            id={item.id}
-            title={item.title}
-            image={item.image}
-            description={item.description}
-            reverse={item.reserve}
-          />
+    <section className="px-8 bg-[#313131] rounded-xl py-24 md:py-36">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+        }}
+        className="max-w-screen-2xl relative mx-auto flex flex-col md:flex-row gap-4"
+      >
+        <div className="flex flex-col gap-2 flex-1 md:max-w-[70%]">
+          <div className="sticky space-y-6 text-white top-24">
+            <span className="border  border-white/10 py-1 text-sm text-neutral-400 px-4 rounded-full">
+              Our Process
+            </span>
+            <h2>
+              We do things <br /> with a{" "}
+              <span className="italic"> purpose</span>{" "}
+            </h2>
+            <p className="text-neutral-200  leading-[160%]">
+              Our aim is to be the kind of partner we&apos;d choose to work
+              with.
+            </p>
+          </div>
         </div>
-      ))}
+        <div className="flex mt-12 md:mt-0 flex-col gap-10 flex-1">
+          {processData.map((item) => (
+            <div key={item.id}>
+              <Process
+                id={item.id}
+                title={item.title}
+                image={item.image}
+                description={item.description}
+              />
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </section>
   );
 };

@@ -1,13 +1,36 @@
+"use client";
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const OurMission = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
-    <section className="max-w-screen-2xl gap-8 px-8 py-36 mx-auto flex flex-col lg:flex-row justify-between">
+    <motion.section
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+      }}
+      className="max-w-screen-2xl gap-8 px-8 py-24 md:py-36 mx-auto flex flex-col lg:flex-row justify-between"
+    >
       <div className="flex flex-1">
         <h2>Our Mission</h2>
       </div>
 
-      <div className="flex leading-[160%] flex-col gap-6 text-neutral-500 text-md flex-1">
+      <div className="flex leading-[160%] flex-col gap-6 text-neutral-500 text-sm md:text-base flex-1">
         <p>
           Founded as a family-owned business, Brady Digital Consulting has grown
           into a trusted name in the Amazon and e-commerce consulting industry.
@@ -27,7 +50,7 @@ const OurMission = () => {
           landscape, ensuring our clients always stay ahead of the curve.{" "}
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
