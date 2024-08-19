@@ -21,7 +21,7 @@ const Item = ({ Icon, title, description }: ItemProps) => (
     <Icon size={24} color="white" />
     <div className="text-white">
       <h3 className="font-semibold text-lg">{title}</h3>
-      <p className="md:w-3/5 text-sm mt-2">{description}</p>
+      <p className="md:w-3/5 text-neutral-200 text-sm mt-2">{description}</p>
     </div>
   </div>
 );
@@ -78,27 +78,27 @@ const HowItWorks = () => {
   }, [controls, inView]);
 
   return (
-    <section className="rounded-t-xl mt-[-100px] z-1000 relative bg-[#F1F1E8] py-24 lg:py-48 pb-36 md:pb-72">
+    <section className="rounded-t-xl mt-[-100px] z-1000 relative bg-[#F1F1E8] pb-20 pt-28 lg:py-48  md:pb-72">
       <motion.div
         ref={ref}
         initial="hidden"
         animate={controls}
         variants={{
           hidden: { opacity: 0, y: 20 },
-          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.75 } },
         }}
         className="justify-between flex-col lg:flex-row flex "
       >
-        <div className="flex flex-1 flex-col lg:pl-[10vw] px-8 lg:p-0 lg:mx-auto justify-between">
+        <div className="flex flex-1 flex-col lg:pl-[10vw] px-4 md:px-8 lg:p-0 lg:mx-auto justify-between">
           <h2 className="text-neutral-800 w-[13ch]">
             Marketing Experts{" "}
             <span className="text-neutral-500">To Guide You.</span>
           </h2>
-          <div className="flex flex-col items-start">
-            <h3 className="text-neutral-800 mt-6 mb-4 lg:mb-6">
+          <div className="flex flex-col items-start pb-12 md:pb-0">
+            <h3 className="text-neutral-800 mt-4 md:mt-8 mb-4 lg:mb-6">
               In-House Marketing Advice{" "}
             </h3>
-            <p className="text-neutral-600 md:w-[50ch] mb-6 lg:mb-8">
+            <p className="text-neutral-500 text-sm md:text-base md:w-[50ch] mb-6 lg:mb-8">
               Benefit from our expert guidance tailored to your in-house
               marketing efforts. We provide actionable advice and insights to
               enhance your strategies and achieve better results.
@@ -107,10 +107,10 @@ const HowItWorks = () => {
               <Button dark>How It Works</Button>
             </Link>
 
-            <div className="bg-black/30 h-[1px] w-full lg:w-[65%] mt-8"></div>
+            <div className="bg-black/20 h-[1px] w-full lg:w-[65%] mt-8"></div>
           </div>
         </div>
-        <div className="h-auto flex flex-col mt-12 lg:mt-0 gap-4 py-16 px-4 md:px-8 lg:p-16 md:rounded-s-xl bg-[radial-gradient(#666666,#222222,#666666)]">
+        <div className="h-auto flex flex-col mt-12 lg:mt-0 gap-4 py-24 md:py-16 px-4 md:px-8 lg:p-16 md:rounded-s-xl bg-[radial-gradient(#666666,#222222,#666666)]">
           {StepData.map((item) => (
             <div key={item.id}>
               <Item

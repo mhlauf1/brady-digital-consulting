@@ -68,7 +68,7 @@ const Value = ({ title, description, icon }: ValueProps) => (
       />
     </div>
     <h3 className="font-instrument text-3xl mt-4">{title}</h3>
-    <p className="text-sm text-neutral-500 leading-[160%] md:w-[85%]">
+    <p className="text-sm text-neutral-500 leading-[160%] md:w-[95%]">
       {description}
     </p>
   </div>
@@ -96,7 +96,7 @@ const Values = () => {
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0, transition: { duration: 1 } },
         }}
-        className="max-w-screen-2xl px-8 flex-col gap-12 py-24 md:py-36 mx-auto flex justify-between"
+        className="max-w-screen-2xl px-4 md:px-8 flex-col gap-12 py-24 md:py-36 mx-auto flex justify-between"
       >
         <h2>Core Values</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

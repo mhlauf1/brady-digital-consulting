@@ -92,7 +92,7 @@ const CaseStudy = ({
       color
     )}`}
   >
-    <div className="flex flex-col py-8 px-6 md:p-8 flex-1 justify-between">
+    <div className="flex flex-col py-6 md:py-8 px-4 md:px-6 md:p-8 flex-1 justify-between">
       <span className="font-instrument text-neutral-800 text-3xl md:text-5xl">
         {company}
       </span>

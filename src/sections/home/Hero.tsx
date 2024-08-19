@@ -31,7 +31,7 @@ const Hero = () => {
         animate={controls}
         variants={{
           hidden: { opacity: 0, y: 20 },
-          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.75 } },
         }}
         className="relative  flex flex-col items-center pt-24  text-center h-full text-white px-4"
       >

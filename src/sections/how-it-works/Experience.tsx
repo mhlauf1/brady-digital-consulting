@@ -80,7 +80,7 @@ const Experience = () => {
           Unmatched Expertise, <br />
           Proven Results
         </h2>
-        <p className="text-neutral-500 mb-12 mt-8 lg:w-[40%] leading-[160%]">
+        <p className="text-neutral-500 mb-8 md:mb-12 mt-4 md:mt-8 lg:w-[40%] text-sm md:text-base leading-[160%]">
           Supercharge productivity. Streamline work by doing it, and seeing it,
           in one place
         </p>

@@ -81,7 +81,7 @@ const Service = ({ title, description, icon }: ServiceProps) => (
         objectFit="cover"
       />
     </div>
-    <h3 className="font-instrument text-3xl mt-4">{title}</h3>
+    <h3 className="font-instrument text-3xl mt-2 md:mt-4">{title}</h3>
     <p className="text-sm text-neutral-500 leading-[160%] lg:w-[85%]">
       {description}
     </p>
@@ -110,12 +110,12 @@ const Services = () => {
       }}
       className="mt-8"
     >
-      <section className="max-w-screen-2xl px-8 flex-col py-24 md:py-36 mx-auto flex justify-between">
+      <section className="max-w-screen-2xl px-4 md:px-8 flex-col py-24 md:py-36 mx-auto flex justify-between">
         <h2>
           Optimization Services: <br />
           Maximize Your Amazon Presence
         </h2>
-        <p className="text-neutral-500 mb-12 mt-8 lg:w-[40%] text-sm md:text-base leading-[160%]">
+        <p className="text-neutral-500 mb-8 md:mb-12 mt-4 md:mt-8 lg:w-[40%] text-sm md:text-base leading-[160%]">
           Optimize every aspect of your Amazon listings to ensure maximum
           visibility and conversions. Our optimization services are designed to
           make your products stand out in the competitive marketplace.

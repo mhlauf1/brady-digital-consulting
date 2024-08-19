@@ -77,12 +77,14 @@ const Testimonials = () => {
         animate={controls}
         variants={{
           hidden: { opacity: 0, y: 20 },
-          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.75 } },
         }}
         className="py-16 lg:py-36 max-w-screen-2xl px-4 md:px-8 mx-auto"
       >
         <div className="h-[1px] mb-4 w-full bg-neutral-400"></div>
-        <p>Don&apos;t just take our word for it. Take theirs.</p>
+        <p className="text-center pt-2 md:text-start">
+          Don&apos;t just take our word for it. Take theirs.
+        </p>
         <div className="flex flex-col items-center">
           <div className={`mt-24 md:mt-36 fade ${fade ? "in" : "out"}`}>
             <blockquote className=" lg:w-[70%] mx-auto testimonial  text-neutral-600">

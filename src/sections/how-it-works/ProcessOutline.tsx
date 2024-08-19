@@ -64,7 +64,7 @@ const Process = ({ title, description, image, id }: ProcessProps) => (
     style={{ boxShadow: "0 4px 20px rgba(0, 0, 0, 0.5)", borderRadius: "20px" }}
   >
     <div className="flex items-center gap-3 flex-1">
-      <div className="h-auto w-[80vw] md:w-[25vw]">
+      <div className="h-auto w-full md:w-[25vw]">
         <Image
           src={image}
           alt="Value image"
@@ -80,7 +80,7 @@ const Process = ({ title, description, image, id }: ProcessProps) => (
         {id}
       </p>
       <h2 className="text-white mb-6">{title}</h2>
-      <p className="text-md text-neutral-400 leading-[160%] md:w-[90%]">
+      <p className="text-sm md:text-base text-neutral-400 leading-[160%] md:w-[90%]">
         {description}
       </p>
     </div>
@@ -100,7 +100,7 @@ const ProcessOutline = () => {
     }
   }, [controls, inView]);
   return (
-    <section className="px-8 bg-[#313131] rounded-xl py-24 md:py-36">
+    <section className="px-4 md:px-8 bg-[#313131] rounded-xl py-24 md:py-36">
       <motion.div
         ref={ref}
         initial="hidden"
@@ -120,7 +120,7 @@ const ProcessOutline = () => {
               We do things <br /> with a{" "}
               <span className="italic"> purpose</span>{" "}
             </h2>
-            <p className="text-neutral-200  leading-[160%]">
+            <p className="text-neutral-200 text-sm md:text-base w-[90%] leading-[160%]">
               Our aim is to be the kind of partner we&apos;d choose to work
               with.
             </p>

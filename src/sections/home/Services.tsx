@@ -27,19 +27,19 @@ const Services = () => {
         animate={controls}
         variants={{
           hidden: { opacity: 0, y: 20 },
-          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.75 } },
         }}
-        className="max-w-screen-2xl px-8 justify-between flex-col gap-12 lg:gap-8 lg:flex-row flex mx-auto"
+        className="max-w-screen-2xl px-4 md:px-8 justify-between flex-col gap-12 lg:gap-8 lg:flex-row flex mx-auto"
       >
         <div className="flex flex-1 flex-col justify-between">
           <h2 className="text-white w-[95%] lg:w-[16ch]">
             Your One-Stop-Shop For Amazon Success.
           </h2>
           <div className="flex flex-col items-start">
-            <h3 className="text-white mt-8 mb-4 lg:mb-6">
+            <h3 className="text-white mt-4 md:mt-8 mb-4 lg:mb-6">
               Comprehensive Amazon Services{" "}
             </h3>
-            <p className="text-white/70 lg:w-[56ch] mb-8">
+            <p className="text-white/70 text-sm md:text-base lg:w-[56ch] mb-8">
               Unlock your brand&apos;s full potential with our tailored Amazon
               solutions. From listing optimization to strategic advertising, we
               cover all aspects of your Amazon presence to ensure maximum growth

@@ -43,7 +43,7 @@ const Hero = () => {
           <Button dark>Book a call</Button>
         </div>
 
-        <div className="h-automd:mt-12 w-[90vw] md:w-[50vw]">
+        <div className="h-automd:mt-12 w-[92vw] md:w-[50vw]">
           <Image
             src="/benefits.png"
             alt="Brady Services"

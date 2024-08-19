@@ -34,11 +34,11 @@ type StatProps = {
 };
 
 const Stat = ({ title, description, caption }: StatProps) => (
-  <div className="rounded-xl flex flex-col gap-1 md:gap-2">
+  <div className="rounded-xl flex flex-col gap-0 md:gap-2">
     <p className="text-neutral-600">{caption}</p>
-    <div className="h-[1px] w-full bg-black/30"></div>
+    <div className="h-[1px] mt-2 md:mt-0 w-full bg-black/30"></div>
 
-    <h3 className="font-instrument text-neutral-700 text-[5rem] md:text-[7rem] md:mt-4">
+    <h3 className="font-instrument leading-[140%] text-neutral-700 text-[5rem] md:text-[7rem] md:mt-4">
       {title}
     </h3>
     <p className="text-sm text-neutral-500 leading-[160%] md:w-[85%]">
@@ -59,7 +59,7 @@ const Stats = () => {
     }
   }, [controls, inView]);
   return (
-    <div className="bg-neutral-50 mx-4 rounded-xl">
+    <div className="bg-neutral-50 md:mx-4 md:rounded-xl">
       <motion.section
         ref={ref}
         initial="hidden"
@@ -74,12 +74,12 @@ const Stats = () => {
           Empowering Success <br />{" "}
           <span className="text-neutral-400">with Proven Results</span>
         </h2>
-        <p className="text-neutral-500 mb-12 mt-8 lg:w-[40%] text-sm md:text-base leading-[160%]">
+        <p className="text-neutral-500 mb-8 md:mb-12 mt-4 md:mt-8 lg:w-[40%] text-sm md:text-base leading-[160%]">
           At Brady Digital Consulting, our results speak for themselves. We are
           committed to driving growth and enhancing profitability for our
           clients through our expert strategies and data-driven insights.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-8">
           {statData.map((stat) => (
             <div key={stat.id}>
               <Stat
