@@ -17,7 +17,7 @@ const Hero = () => {
     }
   }, [controls, inView]);
   return (
-    <section className="relative pt-20 md:pt-24 md:mx-4 bg-[#0D0D12]  md:rounded-xl h-auto">
+    <section className="relative pt-20 md:pt-24 md:mx-4 bg-[#0D0D12] overflow-hidden  md:rounded-xl h-auto">
       <Image
         src="/services-hero.png"
         alt="About Page Brady Digital"

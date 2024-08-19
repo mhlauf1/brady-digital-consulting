@@ -33,7 +33,7 @@ const Hero = () => {
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0, transition: { duration: 1 } },
         }}
-        className="relative z-50 flex flex-col items-center pt-24  text-center h-full text-white px-4"
+        className="relative  flex flex-col items-center pt-24  text-center h-full text-white px-4"
       >
         <div className="flex flex-col h-full px-20 items-center">
           <div className="relative rounded-full transition px-3 py-1 text-xs md:text-sm leading-6 text-gray-300 ring-1 ring-white/10 hover:ring-white/20">
