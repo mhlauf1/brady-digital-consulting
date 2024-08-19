@@ -98,7 +98,7 @@ export default function Navbar() {
               className="hover:text-black transition"
               href="/contact"
             >
-              Contact us
+              Get In Touch
             </Link>
           </NavbarItem>
         </NavbarContent>
@@ -160,7 +160,7 @@ export default function Navbar() {
                 onClick={toggleMenu}
                 href="/contact"
               >
-                Contact Us
+                Get In Touch
               </Link>
             </li>
           </ul>
