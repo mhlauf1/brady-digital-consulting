@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Button from "@/components/Button";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const testimonials = [
   {
@@ -39,6 +41,18 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
 
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setFade(false);
@@ -57,7 +71,16 @@ const Testimonials = () => {
 
   return (
     <section className="bg-[#D2D8D7] mt-[-100px] rounded-t-xl relative ">
-      <div className="py-20 lg:py-36 max-w-screen-2xl px-8 mx-auto">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+        }}
+        className="py-20 lg:py-36 max-w-screen-2xl px-8 mx-auto"
+      >
         <div className="h-[1px] mb-4 w-full bg-neutral-400"></div>
         <p>Don&apos;t just take our word for it. Take theirs.</p>
         <div className="flex flex-col items-center">
@@ -103,7 +126,7 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

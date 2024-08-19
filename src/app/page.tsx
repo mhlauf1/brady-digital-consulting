@@ -5,11 +5,13 @@ import Benefits from "@/sections/home/Benefits";
 import HowItWorks from "@/sections/home/HowItWorks";
 import Testimonials from "@/sections/home/Testimonials";
 import CTA from "@/components/CTA";
+import WhyUs from "@/sections/home/WhyUs";
 
 export default function Home() {
   return (
     <main>
       <Hero />
+      <WhyUs />
       <Services />
       <Benefits />
       <Stats />

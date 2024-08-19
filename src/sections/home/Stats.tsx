@@ -1,10 +1,33 @@
+"use client";
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Stats = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
   return (
     <section className="bg-[#F6F7F7] py-36">
       <div className="max-w-screen-2xl px-4 lg:px-8 pb-24 mx-auto">
-        <div className="bg-white flex flex-col items-start rounded-xl py-16 px-8 lg:p-20">
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+          }}
+          className="bg-white flex flex-col items-start rounded-xl py-16 px-8 lg:p-20"
+        >
           <div className="relative rounded-full transition px-3 py-1 text-sm leading-6 text-neutral-400 ring-1 ring-black/10 hover:ring-black/20">
             Strategic Online Growth.{" "}
             <a href="#" className="font-semibold text-neutral-500">
@@ -55,7 +78,7 @@ const Stats = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

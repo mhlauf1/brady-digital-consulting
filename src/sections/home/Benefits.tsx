@@ -1,12 +1,36 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Link from "next/link";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Benefits = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <section className="z-1000 relative bg-[#FFFEFF] py-24 md:py-48">
-      <div className="max-w-screen-2xl px-8 justify-between flex flex-col lg:flex-row mx-auto">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+        }}
+        className="max-w-screen-2xl px-8 justify-between flex flex-col lg:flex-row mx-auto"
+      >
         <div className="flex flex-1 flex-col  justify-between">
           <h2 className="w-[65%] lg:w-[12ch]">
             Manage Your Online Growth{" "}
@@ -43,7 +67,7 @@ const Benefits = () => {
             GROW
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

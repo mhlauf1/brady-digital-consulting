@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Button from "@/components/Button";
 import { FaChartBar } from "react-icons/fa";
@@ -6,6 +7,8 @@ import { GiMagnifyingGlass } from "react-icons/gi";
 import { TbChartDots3 } from "react-icons/tb";
 import { PiProjectorScreenChart } from "react-icons/pi";
 import Link from "next/link";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 type ItemProps = {
   Icon: any;
@@ -62,9 +65,30 @@ const StepData = [
 ];
 
 const HowItWorks = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <section className="rounded-t-xl mt-[-100px] z-1000 relative bg-[#F1F1E8] py-24 lg:py-48 pb-72">
-      <div className="justify-between flex-col lg:flex-row flex ">
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={{
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+        }}
+        className="justify-between flex-col lg:flex-row flex "
+      >
         <div className="flex flex-1 flex-col lg:pl-[10vw] px-8 lg:p-0 lg:mx-auto justify-between">
           <h2 className="text-neutral-800 w-[13ch]">
             Marketing Experts{" "}
@@ -97,7 +121,7 @@ const HowItWorks = () => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
