@@ -1,26 +1,33 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
+import {
+  Navbar as BradyNav,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  Button,
+} from "@nextui-org/react";
 
-const Navbar = () => {
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
   return (
-    <div className="relative">
-      <header className="w-full py-4 flex justify-between items-center px-4 max-w-screen-2xl mx-auto z-10">
-        <Link href="/">
-          <img
-            src="./color-logo.png"
-            alt="Brady Digital Consulting Logo"
-            height={92}
-            width={116}
-          />
-        </Link>
-
+    <BradyNav className="bg-white  w-full z-50" shouldHideOnScroll>
+      <div className=" max-w-screen-2xl flex w-full justify-between items-center py-4 mx-auto">
+        <NavbarBrand>
+          <Link href="/">
+            <img
+              src="./color-logo.png"
+              alt="Brady Digital Consulting Logo"
+              height={92}
+              width={116}
+            />
+          </Link>
+        </NavbarBrand>
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
@@ -43,26 +50,56 @@ const Navbar = () => {
             ></path>
           </svg>
         </button>
-
-        {/* Desktop Menu */}
-        <ul className="md:flex hidden items-center text-neutral-900 text-sm gap-8">
-          <li className="hover:text-neutral-500 transition">
-            <Link href="/about">About</Link>
-          </li>
-          <li className="hover:text-neutral-500 transition">
-            <Link href="/how-it-works">How It Works</Link>
-          </li>
-          <li className="hover:text-neutral-500 transition">
-            <Link href="/benefits">Benefits</Link>
-          </li>
-          <li className="hover:text-neutral-500 transition">
-            <Link href="/services">Services</Link>
-          </li>
-          <li className="hover:text-neutral-500 transition">
-            <Link href="/contact">Contact Us</Link>
-          </li>
-        </ul>
-
+        <NavbarContent
+          className="hidden sm:flex text-neutral-500 gap-6"
+          justify="end"
+        >
+          <NavbarItem>
+            <Link
+              color="foreground"
+              className="hover:text-black transition"
+              href="/about"
+            >
+              About
+            </Link>
+          </NavbarItem>
+          <NavbarItem isActive>
+            <Link
+              color="foreground"
+              className="hover:text-black transition"
+              href="/about"
+            >
+              How It works
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link
+              color="foreground"
+              className="hover:text-black transition"
+              href="/benefits"
+            >
+              Benefits
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link
+              color="foreground"
+              className="hover:text-black transition"
+              href="/services"
+            >
+              Services
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link
+              color="foreground"
+              className="hover:text-black transition"
+              href="/contact"
+            >
+              Contact us
+            </Link>
+          </NavbarItem>
+        </NavbarContent>
         {/* Mobile Menu */}
         <div
           className={`md:hidden fixed inset-0 bg-white z-20 transform transition-transform duration-300 ease-in-out ${
@@ -126,9 +163,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </header>
-    </div>
+      </div>
+    </BradyNav>
   );
-};
-
-export default Navbar;
+}
