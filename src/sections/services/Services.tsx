@@ -90,7 +90,7 @@ const Service = ({ title, description, icon }: ServiceProps) => (
 const Services = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
-    threshold: 0.2,
+    threshold: 0,
     triggerOnce: true,
   });
 
