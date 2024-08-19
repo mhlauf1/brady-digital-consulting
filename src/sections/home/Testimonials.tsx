@@ -79,18 +79,18 @@ const Testimonials = () => {
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0, transition: { duration: 1 } },
         }}
-        className="py-20 lg:py-36 max-w-screen-2xl px-8 mx-auto"
+        className="py-16 lg:py-36 max-w-screen-2xl px-4 md:px-8 mx-auto"
       >
         <div className="h-[1px] mb-4 w-full bg-neutral-400"></div>
         <p>Don&apos;t just take our word for it. Take theirs.</p>
         <div className="flex flex-col items-center">
-          <div className={`mt-36 fade ${fade ? "in" : "out"}`}>
+          <div className={`mt-24 md:mt-36 fade ${fade ? "in" : "out"}`}>
             <blockquote className=" lg:w-[70%] mx-auto testimonial  text-neutral-600">
               &quot;{quote}&quot;
             </blockquote>
             <p className="mt-12 text-center text-neutral-500">- {name}</p>
           </div>
-          <div className="grid mt-36  w-full gap-12 md:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid mt-24 md:mt-36  w-full gap-12 md:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             <div className="flex text-center flex-col items-center gap-4">
               <p>2023</p>
               <span>USA TODAY</span>
@@ -112,7 +112,7 @@ const Testimonials = () => {
               <p className="w-[20ch]">Best Financial Advisory Firms</p>
             </div>
           </div>
-          <div className="flex gap-12 lg:gap-24 flex-col lg:flex-row py-16 px-8 lg:p-12 border bg-slate-50 border-neutral-400/50 rounded-xl mt-36  items-center">
+          <div className="flex gap-12 lg:gap-24 flex-col lg:flex-row py-16 px-4 md:px-8 lg:p-12 border bg-slate-50 border-neutral-400/50 rounded-xl mt-36  items-center">
             <h2 className="flex leading-[120%] text-center lg:text-start lg:w-[18ch] ">
               How Clients gained ~$5,00,000 With Brady
             </h2>

@@ -52,7 +52,7 @@ const Services = () => {
             <div className="bg-white/50 h-[1px] w-full lg:w-[65%] mt-12"></div>
           </div>
         </div>
-        <div className="h-auto w-[70%] mx-auto lg:w-[40%]">
+        <div className="h-auto w-full mx-auto lg:w-[40%]">
           <Image
             src="/amazon-1.png"
             alt="Brady Services"

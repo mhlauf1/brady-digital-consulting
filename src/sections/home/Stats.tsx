@@ -16,7 +16,7 @@ const Stats = () => {
     }
   }, [controls, inView]);
   return (
-    <section className="bg-[#F6F7F7] py-36">
+    <section className="bg-[#F6F7F7] py-12 md:py-36">
       <div className="max-w-screen-2xl px-4 lg:px-8 pb-24 mx-auto">
         <motion.div
           ref={ref}

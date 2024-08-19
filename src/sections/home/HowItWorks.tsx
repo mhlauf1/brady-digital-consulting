@@ -17,7 +17,7 @@ type ItemProps = {
 };
 
 const Item = ({ Icon, title, description }: ItemProps) => (
-  <div className="flex  bg-neutral-600 py-6 px-8 rounded-lg gap-x-4">
+  <div className="flex  bg-neutral-600 py-4 md:py-6 px-4 md:px-8 rounded-lg gap-x-4">
     <Icon size={24} color="white" />
     <div className="text-white">
       <h3 className="font-semibold text-lg">{title}</h3>
@@ -78,7 +78,7 @@ const HowItWorks = () => {
   }, [controls, inView]);
 
   return (
-    <section className="rounded-t-xl mt-[-100px] z-1000 relative bg-[#F1F1E8] py-24 lg:py-48 pb-72">
+    <section className="rounded-t-xl mt-[-100px] z-1000 relative bg-[#F1F1E8] py-24 lg:py-48 pb-36 md:pb-72">
       <motion.div
         ref={ref}
         initial="hidden"
@@ -110,7 +110,7 @@ const HowItWorks = () => {
             <div className="bg-black/30 h-[1px] w-full lg:w-[65%] mt-8"></div>
           </div>
         </div>
-        <div className="h-auto flex flex-col mt-12 lg:mt-0 gap-4 py-16 px-8 lg:p-16 rounded-s-xl bg-[radial-gradient(#666666,#222222,#666666)]">
+        <div className="h-auto flex flex-col mt-12 lg:mt-0 gap-4 py-16 px-4 md:px-8 lg:p-16 rounded-s-xl bg-[radial-gradient(#666666,#222222,#666666)]">
           {StepData.map((item) => (
             <div key={item.id}>
               <Item
