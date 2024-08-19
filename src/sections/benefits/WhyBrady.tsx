@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
 type ItemProps = {
@@ -78,28 +76,8 @@ const Item = ({ image, title, description }: ItemProps) => (
 );
 
 const WhyBrady = () => {
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    threshold: 0.2,
-    triggerOnce: true,
-  });
-
-  React.useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
   return (
-    <motion.section
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={{
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-      }}
-      className="py-36 px-8 max-w-screen-2xl mx-auto"
-    >
+    <section className="py-36 px-8 max-w-screen-2xl mx-auto">
       <div className=" flex flex-col md:flex-row justify-between">
         <div className="flex flex-1 gap-6 md:gap-10 items-start flex-col">
           <h2>Why Choose Brady Digital Consulting?</h2>
@@ -125,7 +103,7 @@ const WhyBrady = () => {
           </div>
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 };
 
