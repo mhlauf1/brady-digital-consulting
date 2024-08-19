@@ -69,7 +69,7 @@ export default function Navbar() {
             <Link
               color="foreground"
               className="hover:text-black transition"
-              href="/about"
+              href="/how-it-works"
             >
               How It works
             </Link>
