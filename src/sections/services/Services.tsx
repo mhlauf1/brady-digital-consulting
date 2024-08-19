@@ -49,14 +49,14 @@ const servicesData = [
   },
   {
     id: 7,
-    icon: "/about-icon-6.png",
+    icon: "/about-icon-3.png",
     title: "Forecasting",
     description:
       "Predict demand and plan effectively with our advanced forecasting techniques. We help you minimize stockouts and overstock situations, ensuring a balanced inventory.",
   },
   {
     id: 8,
-    icon: "/about-icon-6.png",
+    icon: "/about-icon-1.png",
     title: "Promotions and Deals",
     description:
       "Increase your sales with well-planned promotions and deals. Our strategies attract more customers and enhance your market presence.",

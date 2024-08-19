@@ -80,7 +80,7 @@ const Process = ({ title, description, image, id }: ProcessProps) => (
         {id}
       </p>
       <h2 className="text-white mb-6">{title}</h2>
-      <p className="text-md text-neutral-400 leading-[160%] md:w-[80%]">
+      <p className="text-md text-neutral-400 leading-[160%] md:w-[90%]">
         {description}
       </p>
     </div>
