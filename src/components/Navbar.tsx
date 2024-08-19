@@ -8,15 +8,17 @@ import {
   Link,
   Button,
 } from "@nextui-org/react";
+import useIsDesktop from "@/hooks/useIsDesktop"; // Adjust the path based on your project structure
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isDesktop = useIsDesktop(); // Determine if the screen is desktop size
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <BradyNav className="bg-white  w-full z-50" shouldHideOnScroll>
+    <BradyNav className="bg-white  w-full z-50" shouldHideOnScroll={isDesktop}>
       <div className=" max-w-screen-2xl flex w-full justify-between items-center py-4 mx-auto">
         <NavbarBrand>
           <Link href="/">
@@ -34,7 +36,7 @@ export default function Navbar() {
           className="md:hidden z-50 flex items-center text-neutral-900"
         >
           <svg
-            className="w-6 h-6"
+            className="w-8 h-8"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -106,7 +108,7 @@ export default function Navbar() {
             isMenuOpen ? "translate-y-0" : "-translate-y-full"
           }`}
         >
-          <ul className="flex flex-col items-center mt-[10vh] bg-neutral-50 h-auto mx-8 py-8 rounded-md  text-neutral-900 text-lg space-y-6">
+          <ul className="flex flex-col items-center mt-[10vh] bg-neutral-50 h-auto mx-8 py-12 rounded-md  text-neutral-900 text-lg space-y-6">
             <li>
               <Link
                 className="hover:text-neutral-500 transition"
