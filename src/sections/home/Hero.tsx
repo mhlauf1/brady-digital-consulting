@@ -21,7 +21,7 @@ const Hero = () => {
 
   return (
     <section
-      className="-z-100 relative bg-cover md:mx-4 mb-8 md:rounded-xl bg-center h-[100vh]"
+      className="-z-100 overflow-x-hidden max-w-screen relative bg-cover md:mx-4 md:rounded-xl bg-center h-[100vh]"
       style={{ backgroundImage: "url('/hero-buildings.png')" }}
     >
       <div className="bg-black/70 absolute md:rounded-xl top-0 left-0 h-full right-0 bottom-0"></div>
@@ -44,7 +44,7 @@ const Hero = () => {
             </a>
           </div>
 
-          <h1 className="w-[16ch] home-heading font-instrument mt-12 mb-16">
+          <h1 className="lg:w-[16ch] home-heading font-instrument mt-12 mb-16">
             Amazon Partners. Redefined.
           </h1>
           <HeroButtons />
