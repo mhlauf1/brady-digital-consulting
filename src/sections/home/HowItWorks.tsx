@@ -67,7 +67,7 @@ const StepData = [
 const HowItWorks = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.2,
     triggerOnce: true,
   });
 
@@ -110,7 +110,7 @@ const HowItWorks = () => {
             <div className="bg-black/30 h-[1px] w-full lg:w-[65%] mt-8"></div>
           </div>
         </div>
-        <div className="h-auto flex flex-col mt-12 lg:mt-0 gap-4 py-16 px-4 md:px-8 lg:p-16 rounded-s-xl bg-[radial-gradient(#666666,#222222,#666666)]">
+        <div className="h-auto flex flex-col mt-12 lg:mt-0 gap-4 py-16 px-4 md:px-8 lg:p-16 md:rounded-s-xl bg-[radial-gradient(#666666,#222222,#666666)]">
           {StepData.map((item) => (
             <div key={item.id}>
               <Item

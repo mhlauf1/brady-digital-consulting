@@ -43,7 +43,7 @@ const Testimonials = () => {
 
   const controls = useAnimation();
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.2,
     triggerOnce: true,
   });
 
