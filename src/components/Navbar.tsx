@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import {
   Navbar as BradyNav,
   NavbarBrand,
@@ -23,12 +24,16 @@ export default function Navbar() {
       <div className=" max-w-screen-2xl flex w-full justify-between items-center py-4 mx-auto">
         <NavbarBrand>
           <Link href="/">
-            <img
-              src="./color-logo.png"
-              alt="Brady Digital Consulting Logo"
-              height={125}
-              width={150}
-            />
+            <div className="h-auto w-[150px] md:w-[200px]">
+              <Image
+                src="/brady-nav-logo.png"
+                alt="Brady Digital Consulting Logo"
+                layout="responsive"
+                width={100}
+                height={100}
+                objectFit="cover"
+              />
+            </div>
           </Link>
         </NavbarBrand>
         {/* Mobile Menu Button */}
