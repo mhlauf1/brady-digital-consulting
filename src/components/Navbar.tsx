@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className=" max-w-screen-2xl flex w-full justify-between items-center py-4 mx-auto">
         <NavbarBrand>
           <Link href="/">
-            <div className="h-auto w-[130px] md:w-[200px]">
+            <div className="h-auto w-[130px] md:w-[170px]">
               <Image
                 src="/brady-nav-logo.png"
                 alt="Brady Digital Consulting Logo"
