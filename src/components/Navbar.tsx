@@ -94,9 +94,12 @@ export default function Navbar() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <button className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-4 md:px-6 md:py-3">
+            <a
+              href="mailto:sbrady@bradydigitalconsulting.com"
+              className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-4 md:px-6 md:py-3"
+            >
               <MdEmail /> <span>Email Us</span>
-            </button>
+            </a>
           </NavbarItem>
         </NavbarContent>
         {/* Mobile Menu */}
@@ -152,9 +155,12 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <button className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-4 px-6 py-3">
+              <a
+                href="mailto:sbrady@bradydigitalconsulting.com"
+                className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-4 px-6 py-3"
+              >
                 <MdEmail /> <span>Email Us</span>
-              </button>
+              </a>
             </li>
           </ul>
         </div>
