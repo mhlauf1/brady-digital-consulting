@@ -38,7 +38,7 @@ const WhyUs = () => {
             <Button>About Us</Button>
           </Link>
         </div>
-        <div className="flex flex-1 mt-10 md:mt-0 gap-6 text-sm md:text-base md:gap-20 flex-col">
+        <div className="flex flex-1 mt-10 md:mt-0 gap-6 text-neutral-200 text-sm md:text-base md:gap-20 flex-col">
           <p className="md:w-[85%]">
             At Brady Digital Consulting, we are dedicated to transforming your
             brand&apos;s Amazon and ecommerce presence. Our team of seasoned
