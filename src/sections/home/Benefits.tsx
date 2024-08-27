@@ -31,7 +31,7 @@ const Benefits = () => {
         }}
         className="max-w-screen-2xl px-4 md:px-8 justify-between flex flex-col lg:flex-row mx-auto"
       >
-        <div className="flex flex-1 flex-col  justify-between">
+        <div className="flex flex-1 flex-col md:h-[70vh]  justify-between">
           <h2 className="md:w-[65%] lg:w-[12ch]">
             Manage Your Online Growth{" "}
             <span className="text-neutral-400">Like Experts Do.</span>
@@ -50,10 +50,10 @@ const Benefits = () => {
               <Button dark>Explore Benefits</Button>
             </Link>
 
-            <div className="bg-black/30 h-[1px] w-full lg:w-[65%] mt-8"></div>
+            <div className="bg-black/30 h-[1px] w-full lg:w-[65%] mt-12"></div>
           </div>
         </div>
-        <div className="h-auto mt-8 lg:mt-0 lg:w-[46%]">
+        <div className="h-auto mt-16 lg:mt-0 lg:w-[46%]">
           <Image
             src="/Benefits-image.png"
             alt="Brady Services"
@@ -62,10 +62,6 @@ const Benefits = () => {
             height={100}
             objectFit="cover"
           />
-          <p className="lg:mt-48 mt-8 text-sm w-full md:w-[90%] md:text-md text-neutral-400">
-            Our comprehensive suite of benefits is designed to help your brand
-            GROW
-          </p>
         </div>
       </motion.div>
     </section>

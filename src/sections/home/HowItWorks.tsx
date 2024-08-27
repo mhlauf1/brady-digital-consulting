@@ -39,7 +39,7 @@ const StepData = [
     icon: GiMagnifyingGlass,
     title: "Market Research",
     description:
-      "Unlock invaluable insights with our market research to understand your customers and stay ahead of trends.",
+      "Unlock invaluable insights with our market research to understand your clients and stay ahead of trends.",
   },
   {
     id: 3,

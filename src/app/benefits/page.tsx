@@ -11,7 +11,7 @@ const BenefitsPage = () => {
       <Hero />
       <WhyBrady />
       <Stats />
-      <CaseStudies />
+      {/* <CaseStudies /> */}
       <CTA />
     </main>
   );

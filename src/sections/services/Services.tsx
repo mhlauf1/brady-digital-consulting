@@ -10,7 +10,7 @@ const servicesData = [
     icon: "/about-icon-1.png",
     title: "Listing Setup and Optimization",
     description:
-      "Create compelling, keyword-rich product listings that drive conversions and improve your search ranking on Amazon.",
+      "Create compelling, keyword-rich product listings with backend meta-data that drives conversions and improves organic rank.",
   },
   {
     id: 2,
@@ -36,16 +36,16 @@ const servicesData = [
   {
     id: 5,
     icon: "/about-icon-5.png",
-    title: "Customer Support",
+    title: "Client Support",
     description:
-      "Deliver exceptional customer service with our dedicated support team, ensuring customer satisfaction and loyalty.",
+      "Deliver exceptional client service with our dedicated support team, ensuring client satisfaction and loyalty.",
   },
   {
     id: 6,
     icon: "/about-icon-6.png",
     title: "Ad-hoc Support Issues",
     description:
-      "Resolve unexpected challenges swiftly with our expert ad-hoc support, keeping your operations running smoothly.",
+      "Resolve unexpected challenges swiftly with our ad-hoc support, keeping your operations running smoothly.",
   },
   {
     id: 7,
@@ -59,7 +59,7 @@ const servicesData = [
     icon: "/about-icon-1.png",
     title: "Promotions and Deals",
     description:
-      "Increase your sales with well-planned promotions and deals. Our strategies attract more customers and enhance your market presence.",
+      "Increase your sales with well-planned promotions and deals. Our strategies attract more clients and enhance your market presence.",
   },
 ];
 

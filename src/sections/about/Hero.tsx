@@ -17,7 +17,7 @@ const Hero = () => {
     }
   }, [controls, inView]);
   return (
-    <section className="relative pt-20 md:pt-24 md:mx-4 md:rounded-xl overflow-hidden h-auto">
+    <section className="relative pt-20 md:pt-24 md:h-[60vh] md:mx-4 md:rounded-xl overflow-hidden h-auto">
       <Image
         src="/about-hero.png"
         alt="About Page Brady Digital"
@@ -43,19 +43,9 @@ const Hero = () => {
         </h1>
         <p className="text-white/70 md:w-[72ch] leading-[160%] text-sm md:text-lg text-center">
           Discover our family-owned legacy and industry leadership in delivering
-          comprehensive Amazon and e-commerce solutions that drive growth and
+          comprehensive Amazon and ecommerce solutions that drive growth and
           success.
         </p>
-        <div className="h-auto mt-20 w-[80vw] md:w-[60vw]">
-          <Image
-            src="/about-sub.png"
-            alt="Brady Services"
-            layout="responsive"
-            width={100}
-            height={100}
-            objectFit="cover"
-          />
-        </div>
       </motion.div>
     </section>
   );

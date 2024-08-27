@@ -41,13 +41,13 @@ const WhyUs = () => {
         <div className="flex flex-1 mt-10 md:mt-0 gap-6 text-sm md:text-base md:gap-20 flex-col">
           <p className="md:w-[85%]">
             At Brady Digital Consulting, we are dedicated to transforming your
-            brand&apos;s Amazon and e-commerce presence. Our team of seasoned
+            brand&apos;s Amazon and ecommerce presence. Our team of seasoned
             experts combines industry knowledge with innovative strategies to
             deliver unparalleled results.
           </p>
           <p className="md:w-[85%]">
             Founded as a family-owned business, Brady Digital Consulting has
-            grown into a trusted name in the Amazon and e-commerce consulting
+            grown into a trusted name in the Amazon and ecommerce consulting
             industry.
           </p>
         </div>

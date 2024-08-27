@@ -10,7 +10,7 @@ const valueData = [
     icon: "/about-icon-1.png",
     title: "Excellence",
     description:
-      "We are committed to excellence in every project, delivering top-tier services that create lasting impact and drive remarkable results.",
+      "We are committed to excellence in every project, delivering top-tier services that create lasting impacts and drive remarkable results.",
   },
   {
     id: 2,
@@ -24,12 +24,12 @@ const valueData = [
     icon: "/about-icon-3.png",
     title: "Adaptability",
     description:
-      "In the fast-paced world of e-commerce, adaptability is key. We stay flexible and responsive to changing market conditions to ensure sustained success.",
+      "In today’s fast-paced ecommerce world, adaptability is key. We stay flexible and responsive to changing market conditions to ensure sustained success.",
   },
   {
     id: 4,
     icon: "/about-icon-4.png",
-    title: "Customer-Centric",
+    title: "Client-Centric",
     description:
       "Our clients are at the heart of everything we do. We strive to understand their unique needs and deliver tailored solutions that exceed expectations.",
   },

@@ -76,14 +76,10 @@ const Experience = () => {
         }}
         className="max-w-screen-2xl px-8 flex-col py-24 md:py-36 mx-auto flex justify-between"
       >
-        <h2>
+        <h2 className="mb-8 md:mb-12 ">
           Unmatched Expertise, <br />
           Proven Results
         </h2>
-        <p className="text-neutral-500 mb-8 md:mb-12 mt-4 md:mt-8 lg:w-[40%] text-sm md:text-base leading-[160%]">
-          Supercharge productivity. Streamline work by doing it, and seeing it,
-          in one place
-        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {experienceData.map((item) => (
             <div key={item.id}>

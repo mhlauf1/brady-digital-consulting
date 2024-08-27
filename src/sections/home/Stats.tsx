@@ -2,6 +2,7 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 const Stats = () => {
   const controls = useAnimation();
@@ -30,10 +31,13 @@ const Stats = () => {
         >
           <div className="relative rounded-full transition px-3 py-1 text-sm leading-6 text-neutral-400 ring-1 ring-black/10 hover:ring-black/20">
             Strategic Online Growth.{" "}
-            <a href="#" className="font-semibold text-neutral-500">
+            <Link
+              href="/how-it-works"
+              className="font-semibold text-neutral-500"
+            >
               <span aria-hidden="true" className="absolute inset-0" />
               Learn how <span aria-hidden="true">&rarr;</span>
-            </a>
+            </Link>
           </div>
           <div className="flex flex-col lg:flex-row mt-8 gap-4 md:gap-6 justify-between">
             <h2 className="lg:w-[24ch]">

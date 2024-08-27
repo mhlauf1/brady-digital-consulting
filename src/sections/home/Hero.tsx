@@ -37,7 +37,7 @@ const Hero = () => {
       >
         <div className="flex flex-col h-full px-20 items-center">
           <div className="relative rounded-full transition px-3 py-1 text-xs md:text-sm leading-6 text-gray-300 ring-1 ring-white/10 hover:ring-white/20">
-            Leading the Way in E-commerce Excellence.{" "}
+            Leading the Way in Ecommerce Excellence.{" "}
             <a href="#" className="font-semibold text-white">
               <span aria-hidden="true" />
               Read more <span aria-hidden="true">&rarr;</span>
@@ -48,18 +48,20 @@ const Hero = () => {
             Amazon Partners. Redefined.
           </h1>
           <HeroButtons />
-          <div className="pb-8 md:pt-6 md:grid flex items-center justify-center md:grid-cols-3 space-x-6 w-full md:space-x-12 text-white/70">
-            <div className="flex flex-col md:flex-row md:w-full w-[12ch] items-center gap-3">
+          <div className="pb-8 md:pt-6 md:grid flex items-center justify-center md:grid-cols-3  w-full text-white/70">
+            <div className="flex flex-col md:flex-row md:w-full w-[12ch] justify-center items-center gap-3">
               <FaRocket />{" "}
-              <span className="text-xs md:text-sm">Online Sales Growth</span>
+              <span className="text-xs md:text-sm">
+                Drive Online Sales Growth
+              </span>
             </div>
-            <div className="flex flex-col md:flex-row md:w-full w-[12ch] items-center gap-3">
+            <div className="flex flex-col md:flex-row md:w-full w-[12ch] justify-center items-center gap-3">
               <FaChartBar />{" "}
               <span className="text-xs md:text-sm">
                 40% Conversion Rate Boost
               </span>
             </div>
-            <div className="flex flex-col md:flex-row md:w-full w-[12ch] items-center gap-3">
+            <div className="flex flex-col md:flex-row md:w-full w-[12ch] justify-center items-center gap-3">
               <FaChartLine />{" "}
               <span className="text-xs md:text-sm">278% Session Growth</span>
             </div>

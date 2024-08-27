@@ -39,7 +39,7 @@ const processData = [
     id: "05",
     image: "/hiw-5.png",
     title: "Reporting",
-    description: `Transparency is key to our process. We provide detailed reporting to keep you informed about your brand&apos;s performance. Our comprehensive reports include metrics, insights, and analyses, allowing you to track progress and measure success with confidence.`,
+    description: `Transparency is key to our process. We provide detailed reporting to keep you informed about your brand's performance. Our comprehensive reports include metrics, insights, and analyses, allowing you to track progress and measure success with confidence.`,
   },
   {
     id: "06",
@@ -47,7 +47,7 @@ const processData = [
     title: "Forecasting",
     reserve: true,
     description:
-      "To help you stay ahead, we offer precise forecasting services. By analyzing trends and market data, we predict future performance and provide actionable recommendations. Enabling you to make informed decisions and plan strategically for sustained growth.",
+      "To help you stay ahead, we offer detailed forecasting services. By analyzing trends and market data, we predict future performance and provide actionable recommendations. Enabling you to make informed decisions and plan strategically for sustained growth.",
   },
 ];
 

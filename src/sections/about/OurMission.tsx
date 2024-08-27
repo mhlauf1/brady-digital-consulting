@@ -33,21 +33,20 @@ const OurMission = () => {
       <div className="flex leading-[160%] flex-col gap-6 text-neutral-500 text-sm md:text-base flex-1">
         <p>
           Founded as a family-owned business, Brady Digital Consulting has grown
-          into a trusted name in the Amazon and e-commerce consulting industry.
+          into a trusted name in the Amazon and ecommerce consulting industry.
           Our journey began with a passion for helping brands navigate the
           complex digital marketplace, and over the years, we have established
           ourselves as leaders through unwavering commitment and exceptional
-          service.
+          service <span className="font-bold">to our customers.</span>
         </p>
         <p>
           Our rich history is a testament to our dedication, expertise, and the
           lasting relationships we&apos;ve built with our clients.
         </p>
         <p>
-          What started as a small, dedicated team has now expanded into a robust
-          organization known for driving impressive results. We pride ourselves
-          on our ability to adapt and evolve with the ever-changing digital
-          landscape, ensuring our clients always stay ahead of the curve.{" "}
+          We have expanded into an organization known for driving impressive
+          results. We pride ourselves on evolving with the ever-changing digital
+          landscape and ensuring our clients always stay ahead of the curve.{" "}
         </p>
       </div>
     </motion.section>

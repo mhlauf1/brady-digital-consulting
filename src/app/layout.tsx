@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Instrument_Serif } from "next/font/google";
+import { Instrument_Serif, Inter } from "next/font/google";
+
 import "./globals.css";
 import localFont from "next/font/local";
 import Footer from "@/components/Footer";
@@ -11,11 +12,10 @@ const instrument = Instrument_Serif({
   variable: "--font-instrument",
 });
 
-const helvetica = localFont({
-  src: "../fonts/Helvetica.ttf",
-  variable: "--font-helvetica",
-  display: "swap",
-  preload: true,
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700", "900"],
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${helvetica.className} overflow-x-hidden ${instrument.variable}`}
+        className={`${inter.className} overflow-x-hidden ${instrument.variable}`}
       >
         <Navbar />
         {children}

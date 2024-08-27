@@ -20,7 +20,7 @@ const whyBradyData = [
     id: 1,
     title: "Full Scope Amazon Services",
     description:
-      "As a one-stop-shop Amazon partner, we provide inventory management, PPC, listing setup, competitive analysis, customer support, promotions, and more.",
+      "As a one-stop-shop Amazon partner, we provide inventory management, PPC, listing setup, competitive analysis, client support, promotions, and more.",
     image: "/b-2.png",
   },
   {

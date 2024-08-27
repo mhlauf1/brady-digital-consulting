@@ -5,10 +5,11 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
-  Button,
+  // Link,
 } from "@nextui-org/react";
 import useIsDesktop from "@/hooks/useIsDesktop"; // Adjust the path based on your project structure
+import Link from "next/link";
+import { MdEmail } from "react-icons/md";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,8 +26,8 @@ export default function Navbar() {
             <img
               src="./color-logo.png"
               alt="Brady Digital Consulting Logo"
-              height={92}
-              width={116}
+              height={125}
+              width={150}
             />
           </Link>
         </NavbarBrand>
@@ -93,13 +94,9 @@ export default function Navbar() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link
-              color="foreground"
-              className="hover:text-black transition"
-              href="/contact"
-            >
-              Get In Touch
-            </Link>
+            <button className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-4 md:px-6 md:py-3">
+              <MdEmail /> <span>Email Us</span>
+            </button>
           </NavbarItem>
         </NavbarContent>
         {/* Mobile Menu */}

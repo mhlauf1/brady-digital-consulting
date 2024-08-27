@@ -39,10 +39,10 @@ const Hero = () => {
           Services
         </span>
         <h1 className="capitalize md:w-[25ch] my-12  text-center">
-          Comprehensive Amazon Services for Exceptional Growth
+          Comprehensive Portfolio of Amazon Services
         </h1>
         <p className="text-white/70 md:w-[44ch] leading-[160%] text-sm md:text-lg text-center">
-          Unlock Your Brand&apos;s Potential with Our Full-Spectrum E-commerce
+          Unlock Your Brand&apos;s Potential with Our Full-Spectrum Ecommerce
           Solutions{" "}
         </p>
         <div className="h-auto mt-20 md:mt-12 w-[80vw] md:w-[60vw]">

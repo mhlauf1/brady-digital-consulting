@@ -13,7 +13,7 @@ const statData = [
   },
   {
     id: 2,
-    caption: "Year-over-year",
+    caption: "Sessions Increase",
     title: "278%",
     description:
       "Brand A grew total sessions by 278% year-over-year with efficient ad spend and optimized listings.",
