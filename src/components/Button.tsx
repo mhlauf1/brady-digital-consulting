@@ -14,7 +14,7 @@ const Button = ({
         dark ? "bg-neutral-900 text-white" : "bg-white text-neutral-900"
       } items-center rounded-full shadow-lg hover:scale-[101%] text-sm md:text-md transition  flex gap-4 md:px-8 px-6 py-3 md:py-4`}
     >
-      <FaArrowRightLong /> <span>{children}</span>
+      <span>{children}</span> <FaArrowRightLong />
     </button>
   );
 };

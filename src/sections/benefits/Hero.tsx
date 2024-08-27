@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { MdEmail } from "react-icons/md";
 
 const Hero = () => {
   const controls = useAnimation();
@@ -27,7 +28,7 @@ const Hero = () => {
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 1 } },
       }}
-      className="relative px-8  max-w-screen-2xl mx-auto h-[90vh]"
+      className="relative px-8  max-w-screen-2xl mx-auto h-auto md:h-[90vh]"
     >
       <div className="flex gap-16 mt-16 md:mt-0 flex-col md:flex-row items-center h-full">
         <div className="flex flex-col items-center md:items-start">
@@ -40,7 +41,12 @@ const Hero = () => {
           <p className=" md:w-[48ch] text-center md:text-start mb-8 text-neutral-500 leading-[160%] text-sm md:text-lg">
             Experience Unmatched Growth and Success with Our Expertise
           </p>
-          <Button dark>Book a call</Button>
+          <a
+            href="mailto:sbrady@bradydigitalconsulting.com"
+            className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-3 px-6 py-3"
+          >
+            <span>Email Us</span> <MdEmail />
+          </a>
         </div>
 
         <div className="h-automd:mt-12 w-[92vw] md:w-[50vw]">

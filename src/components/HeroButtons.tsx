@@ -8,9 +8,6 @@ const HeroButtons = () => {
       <Link href="/how-it-works">
         <Button>How It Works</Button>
       </Link>
-      <Link href="/contact">
-        <Button dark>Contact Us</Button>
-      </Link>
     </div>
   );
 };

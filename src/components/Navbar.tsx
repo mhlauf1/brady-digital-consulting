@@ -96,9 +96,9 @@ export default function Navbar() {
           <NavbarItem>
             <a
               href="mailto:sbrady@bradydigitalconsulting.com"
-              className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-4 md:px-6 md:py-3"
+              className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-3 md:px-6 md:py-3"
             >
-              <MdEmail /> <span>Email Us</span>
+              <span>Email Us</span> <MdEmail />
             </a>
           </NavbarItem>
         </NavbarContent>
@@ -157,9 +157,9 @@ export default function Navbar() {
             <li>
               <a
                 href="mailto:sbrady@bradydigitalconsulting.com"
-                className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-4 px-6 py-3"
+                className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-3 px-6 py-3"
               >
-                <MdEmail /> <span>Email Us</span>
+                <span>Email Us</span> <MdEmail />
               </a>
             </li>
           </ul>

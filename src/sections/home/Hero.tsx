@@ -5,6 +5,7 @@ import { FaChartBar } from "react-icons/fa";
 import HeroButtons from "@/components/HeroButtons";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 const Hero = () => {
   const controls = useAnimation();
@@ -36,13 +37,16 @@ const Hero = () => {
         className="relative  flex flex-col items-center pt-24  text-center h-full text-white px-4"
       >
         <div className="flex flex-col h-full px-20 items-center">
-          <div className="relative rounded-full transition px-3 py-1 text-xs md:text-sm leading-6 text-gray-300 ring-1 ring-white/10 hover:ring-white/20">
+          <Link
+            href="/about"
+            className="relative rounded-full transition px-3 py-1 text-xs md:text-sm leading-6 text-gray-300 ring-1 ring-white/10 hover:ring-white/20"
+          >
             Leading the Way in Ecommerce Excellence.{" "}
             <a href="#" className="font-semibold text-white">
               <span aria-hidden="true" />
               Read more <span aria-hidden="true">&rarr;</span>
             </a>
-          </div>
+          </Link>
 
           <h1 className="lg:w-[16ch] home-heading font-instrument mt-12 mb-16">
             Amazon Partners. Redefined.

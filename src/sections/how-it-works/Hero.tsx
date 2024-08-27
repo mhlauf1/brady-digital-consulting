@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { MdEmail } from "react-icons/md";
 
 const Hero = () => {
   const controls = useAnimation();
@@ -40,7 +41,12 @@ const Hero = () => {
             Discover our step-by-step process for driving your brand&apos;s
             growth and success on Amazon.
           </p>
-          <Button dark>Book a call</Button>
+          <a
+            href="mailto:sbrady@bradydigitalconsulting.com"
+            className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-3 px-6 py-3"
+          >
+            <span>Email Us</span> <MdEmail />
+          </a>
         </div>
 
         <div className="h-auto md:mt-12 w-[90vw] md:w-[50vw]">
