@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="flex lg:flex-col flex-col-reverse px-4 items-center justify-center py-16 md:gap-12 bg-neutral-900">
       <Link href="/">
-        <div className="h-auto w-[150px] md:w-[200px]">
+        <div className="h-auto w-[130px] md:w-[200px]">
           <Image
             src="/brady-footer-logo.png"
             alt="Brady Digital Consulting Logo"
