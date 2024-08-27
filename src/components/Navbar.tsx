@@ -59,7 +59,7 @@ export default function Navbar() {
           </svg>
         </button>
         <NavbarContent
-          className="hidden sm:flex text-neutral-500 gap-6"
+          className="hidden md:flex text-neutral-500 gap-6"
           justify="end"
         >
           <NavbarItem>
