@@ -152,13 +152,9 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link
-                className="hover:text-neutral-500 transition"
-                onClick={toggleMenu}
-                href="/contact"
-              >
-                Get In Touch
-              </Link>
+              <button className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-4 md:px-6 md:py-3">
+                <MdEmail /> <span>Email Us</span>
+              </button>
             </li>
           </ul>
         </div>
