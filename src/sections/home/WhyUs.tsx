@@ -20,7 +20,13 @@ const WhyUs = () => {
   }, [controls, inView]);
 
   return (
-    <div className="relative text-neutral-700 bg-neutral-50 px-4 md:px-8 pt-32 pb-56 md:pb-72 md:pt-48">
+    <div className="relative text-neutral-700 px-4 md:px-8 pt-32 pb-56 md:pb-72 md:pt-48">
+      <Image
+        src="/hero-bg-color.png"
+        className="-z-10 opacity-15"
+        alt="Color Bg"
+        fill
+      />
       <motion.div
         ref={ref}
         initial="hidden"

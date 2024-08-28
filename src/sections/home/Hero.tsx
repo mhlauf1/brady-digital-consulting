@@ -34,7 +34,7 @@ const Hero = () => {
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.75 } },
         }}
-        className="relative  flex flex-col items-center pt-10vh] md:pt-[15vh]  text-center h-full text-white px-4"
+        className="relative  flex flex-col items-center pt-10vh md:pt-[15vh]  text-center h-full text-white px-4"
       >
         <div className="flex flex-col h-full px-4 md:px-20 items-center">
           <Link
@@ -57,22 +57,6 @@ const Hero = () => {
               Partnership-focused digital consulting services with proven
               results.
             </p>
-            {/* <div className="flex flex-col md:flex-row md:w-full w-[12ch] justify-center items-center gap-3">
-              <FaRocket />{" "}
-              <span className="text-xs md:text-sm">
-                Drive Online Sales Growth
-              </span>
-            </div>
-            <div className="flex flex-col md:flex-row md:w-full w-[12ch] justify-center items-center gap-3">
-              <FaChartBar />{" "}
-              <span className="text-xs md:text-sm">
-                40% Conversion Rate Boost
-              </span>
-            </div>
-            <div className="flex flex-col md:flex-row md:w-full w-[12ch] justify-center items-center gap-3">
-              <FaChartLine />{" "}
-              <span className="text-xs md:text-sm">278% Session Growth</span>
-            </div> */}
           </div>
         </div>
         <div className="h-[1px] mb-16 max-w-screen-2xl w-full bg-white/50"></div>
