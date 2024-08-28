@@ -17,7 +17,7 @@ const Hero = () => {
     }
   }, [controls, inView]);
   return (
-    <section className="relative pt-20 md:pt-24 md:mx-4 bg-[#0D0D12] overflow-hidden  md:rounded-xl h-auto">
+    <section className="relative pt-20 md:pt-24 md:mx-2 bg-[#0D0D12] overflow-hidden  md:rounded-xl h-[90vh]">
       <Image
         src="/services-hero.png"
         alt="About Page Brady Digital"
@@ -45,7 +45,7 @@ const Hero = () => {
           Unlock Your Brand&apos;s Potential with Our Full-Spectrum Ecommerce
           Solutions{" "}
         </p>
-        <div className="h-auto mt-20 md:mt-12 w-[80vw] md:w-[60vw]">
+        <div className="h-auto mt-20 md:mt-12 w-[80vw] md:w-[50vw]">
           <Image
             src="/services-sub.png"
             alt="Brady Services"
@@ -53,6 +53,7 @@ const Hero = () => {
             width={100}
             height={100}
             objectFit="cover"
+            objectPosition="top"
           />
         </div>
       </motion.div>

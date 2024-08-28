@@ -20,8 +20,7 @@ const WhyUs = () => {
   }, [controls, inView]);
 
   return (
-    <div className="relative text-white px-4 md:px-8 pt-32 pb-56 md:pb-72 md:pt-48">
-      <Image src="/hero-bg-color.png" className="-z-10" alt="Color Bg" fill />
+    <div className="relative text-neutral-700 bg-neutral-50 px-4 md:px-8 pt-32 pb-56 md:pb-72 md:pt-48">
       <motion.div
         ref={ref}
         initial="hidden"
@@ -35,10 +34,10 @@ const WhyUs = () => {
         <div className="flex flex-1 gap-6 md:gap-10 items-start flex-col">
           <h2>Why Us?</h2>
           <Link href="/about">
-            <Button>About Us</Button>
+            <Button dark>About Us</Button>
           </Link>
         </div>
-        <div className="flex flex-1 mt-10 md:mt-0 gap-6 text-neutral-200 text-sm md:text-base md:gap-20 flex-col">
+        <div className="flex flex-1 mt-10 md:mt-0 gap-6 text-neutral-600 text-sm md:text-base md:gap-20 flex-col">
           <p className="md:w-[85%]">
             At Brady Digital Consulting, we are dedicated to transforming your
             brand&apos;s Amazon and ecommerce presence. Our team of seasoned

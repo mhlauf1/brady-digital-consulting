@@ -22,7 +22,7 @@ const Hero = () => {
 
   return (
     <section
-      className="-z-100 overflow-x-hidden max-w-screen relative bg-cover md:mb-8 md:mx-4 md:rounded-xl bg-center h-[100vh]"
+      className="-z-100 overflow-x-hidden max-w-screen relative bg-cover md:mb-2 md:mx-2 md:rounded-xl bg-center h-[90vh]"
       style={{ backgroundImage: "url('/hero-buildings.png')" }}
     >
       <div className="bg-black/70 absolute md:rounded-xl top-0  left-0 h-full right-0 bottom-0"></div>
@@ -34,7 +34,7 @@ const Hero = () => {
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.75 } },
         }}
-        className="relative  flex flex-col items-center pt-24  text-center h-full text-white px-4"
+        className="relative  flex flex-col items-center pt-[15vh]  text-center h-full text-white px-4"
       >
         <div className="flex flex-col h-full px-20 items-center">
           <Link
@@ -48,11 +48,11 @@ const Hero = () => {
             </a>
           </Link>
 
-          <h1 className="lg:w-[16ch] home-heading font-instrument mt-12 mb-16">
+          <h1 className="lg:w-[16ch] home-heading font-instrument my-12">
             Amazon Partners. Redefined.
           </h1>
           <HeroButtons />
-          <div className="pb-8 md:pt-4 flex items-center justify-center  w-full text-neutral-200">
+          <div className="md:pt-4 flex items-center justify-center mt-8 md:mt-12 w-full text-neutral-200">
             <p>
               Partnership-focused digital consulting services with proven
               results.
@@ -75,7 +75,7 @@ const Hero = () => {
             </div> */}
           </div>
         </div>
-        <div className="h-[1px] mb-32 max-w-screen-2xl w-full bg-white/50"></div>
+        <div className="h-[1px] mb-16 max-w-screen-2xl w-full bg-white/50"></div>
       </motion.div>
     </section>
   );

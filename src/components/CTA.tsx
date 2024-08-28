@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const CTA = () => {
   return (
-    <section className="bg-neutral-800 px-4 md:px-8 relative  mx-4 my-8 rounded-xl py-32 md:py-36 text-white overflow-hidden">
+    <section className="bg-neutral-800 px-4 md:px-8 relative  mx-2 my-2 rounded-xl py-32 md:py-36 text-white overflow-hidden">
       <div className="flex-col flex gap-10 items-center justify-center">
         <h2 className="lg:w-[16ch] text-[2.5rem] md:text-[3rem] lg:text-[5rem] text-center relative z-10">
           Ready to Transform Your Brand?
