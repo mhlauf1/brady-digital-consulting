@@ -59,7 +59,7 @@ const Hero = () => {
             </p>
           </div>
         </div>
-        <div className="h-[1px] mb-16 max-w-screen-2xl w-full bg-white/50"></div>
+        <div className="h-[1px] mb-24 md:mb-16 max-w-screen-2xl w-full bg-white/50"></div>
       </motion.div>
     </section>
   );
