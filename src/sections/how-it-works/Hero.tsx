@@ -43,7 +43,7 @@ const Hero = () => {
           </p>
           <a
             href="mailto:sbrady@bradydigitalconsulting.com"
-            className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-3 px-6 py-3"
+            className="bg-neutral-900 text-white items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-4  md:px-12 px-6 py-3 md:py-5"
           >
             <span>Email Us</span> <MdEmail />
           </a>

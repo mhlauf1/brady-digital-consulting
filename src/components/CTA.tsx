@@ -2,6 +2,7 @@
 import React from "react";
 import Button from "./Button";
 import Image from "next/image";
+import { MdEmail } from "react-icons/md";
 
 const CTA = () => {
   return (
@@ -15,8 +16,13 @@ const CTA = () => {
           expert strategies and personalized support can make. Contact us now to
           unlock your brand&apos;s full potential.
         </p>
-        <div className="flex gap-4 relative z-10">
-          <Button>Get Started Today</Button>
+        <div className="relative z-50">
+          <a
+            href="mailto:sbrady@bradydigitalconsulting.com"
+            className="bg-white relative text-neutral-800 items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-4  md:px-12 px-6 py-3 md:py-5"
+          >
+            <span>Email Us</span> <MdEmail />
+          </a>
         </div>
       </div>
 

@@ -12,7 +12,7 @@ const Button = ({
     <button
       className={`${
         dark ? "bg-neutral-900 text-white" : "bg-white text-neutral-900"
-      } items-center rounded-full shadow-lg hover:scale-[101%] text-sm md:text-md transition  flex gap-4 md:px-8 px-6 py-3 md:py-4`}
+      } items-center rounded-full shadow-lg hover:scale-[101%] text-sm md:text-md transition  flex gap-4 md:px-12 px-6 py-3 md:py-5`}
     >
       <span>{children}</span> <FaArrowRightLong />
     </button>

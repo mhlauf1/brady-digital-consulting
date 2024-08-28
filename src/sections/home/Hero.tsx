@@ -34,9 +34,9 @@ const Hero = () => {
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.75 } },
         }}
-        className="relative  flex flex-col items-center pt-[15vh]  text-center h-full text-white px-4"
+        className="relative  flex flex-col items-center pt-[11vh] md:pt-[15vh]  text-center h-full text-white px-4"
       >
-        <div className="flex flex-col h-full px-4 md:px-20 items-center">
+        <div className="flex flex-col h-full px-0 md:px-20 items-center">
           <Link
             href="/about"
             className="relative rounded-full transition px-3 py-1 text-xs md:text-sm leading-6 text-gray-300 ring-1 ring-white/10 hover:ring-white/20"
@@ -52,7 +52,7 @@ const Hero = () => {
             Amazon Partners. Redefined.
           </h1>
           <HeroButtons />
-          <div className="md:pt-4 flex items-center justify-center mt-8 md:mt-12 w-full text-neutral-200">
+          <div className="md:pt-4 flex items-center justify-center mt-12 w-full text-neutral-200">
             <p>
               Partnership-focused digital consulting services with proven
               results.
