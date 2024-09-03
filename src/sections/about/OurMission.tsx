@@ -37,7 +37,7 @@ const OurMission = () => {
           Our journey began with a passion for helping brands navigate the
           complex digital marketplace, and over the years, we have established
           ourselves as leaders through unwavering commitment and exceptional
-          service <span className="font-bold">to our customers.</span>
+          service <span className="font-bold">to our clients.</span>
         </p>
         <p>
           Our rich history is a testament to our dedication, expertise, and the
