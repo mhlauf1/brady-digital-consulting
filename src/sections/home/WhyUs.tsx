@@ -20,7 +20,7 @@ const WhyUs = () => {
   }, [controls, inView]);
 
   return (
-    <div className="relative text-neutral-100 px-4 md:px-8 pt-32 pb-56 md:pb-72 md:pt-48">
+    <div className="relative text-neutral-100  pt-32 pb-56 md:pb-72 md:pt-48">
       <Image
         src="/hero-bg-color.png"
         className="-z-10 opacity-85"
@@ -35,7 +35,7 @@ const WhyUs = () => {
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.75 } },
         }}
-        className="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between"
+        className="max-w-screen-2xl px-4 md:px-12 mx-auto flex flex-col md:flex-row justify-between"
       >
         <div className="flex flex-1 gap-6 md:gap-10 items-start flex-col">
           <h2>Why Us?</h2>

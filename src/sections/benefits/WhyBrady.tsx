@@ -77,7 +77,7 @@ const Item = ({ image, title, description }: ItemProps) => (
 
 const WhyBrady = () => {
   return (
-    <section className="py-36 px-4 md:px-8 max-w-screen-2xl mx-auto">
+    <section className="py-36 px-4 md:px-12 max-w-screen-2xl mx-auto">
       <div className=" flex flex-col md:flex-row justify-between">
         <div className="flex flex-1 gap-6 md:gap-10 items-start flex-col">
           <h2>Why Choose Brady Digital Consulting?</h2>

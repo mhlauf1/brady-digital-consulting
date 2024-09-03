@@ -89,7 +89,7 @@ const HowItWorks = () => {
         }}
         className="justify-between flex-col lg:flex-row flex "
       >
-        <div className="flex flex-1 flex-col lg:pl-[10vw] px-4 md:px-8 lg:p-0 lg:mx-auto justify-between">
+        <div className="flex flex-1 flex-col lg:pl-[8vw] px-4 md:px-8 lg:p-0 lg:mx-auto justify-between">
           <h2 className="text-neutral-800 w-[13ch]">
             Marketing Experts{" "}
             <span className="text-neutral-500">To Guide You.</span>

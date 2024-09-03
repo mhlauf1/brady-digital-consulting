@@ -29,7 +29,7 @@ const Services = () => {
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.75 } },
         }}
-        className="max-w-screen-2xl px-4 md:px-8 justify-between flex-col gap-12 lg:gap-8 lg:flex-row flex mx-auto"
+        className="max-w-screen-2xl px-4 md:px-12 justify-between flex-col gap-12 lg:gap-8 lg:flex-row flex mx-auto"
       >
         <div className="flex flex-1 flex-col justify-between">
           <h2 className="text-white w-[95%] lg:w-[16ch]">

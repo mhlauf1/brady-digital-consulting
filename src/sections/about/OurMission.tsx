@@ -24,7 +24,7 @@ const OurMission = () => {
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 1 } },
       }}
-      className="max-w-screen-2xl gap-8 px-4 md:px-8 py-24 md:py-36 mx-auto flex flex-col lg:flex-row justify-between"
+      className="max-w-screen-2xl gap-8 px-4 md:px-12 py-24 md:py-36 mx-auto flex flex-col lg:flex-row justify-between"
     >
       <div className="flex flex-1">
         <h2>Our Mission</h2>

@@ -74,7 +74,7 @@ const Experience = () => {
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0, transition: { duration: 1 } },
         }}
-        className="max-w-screen-2xl px-8 flex-col py-24 md:py-36 mx-auto flex justify-between"
+        className="max-w-screen-2xl px-4 md:px-12 flex-col py-24 md:py-36 mx-auto flex justify-between"
       >
         <h2 className="mb-8 md:mb-12 ">
           Unmatched Expertise, <br />

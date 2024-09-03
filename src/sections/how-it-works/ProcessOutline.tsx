@@ -91,7 +91,7 @@ const ProcessOutline = () => {
     }
   }, [controls, inView]);
   return (
-    <section className="px-4 md:px-8 bg-neutral-500 rounded-xl py-24 md:py-36">
+    <section className=" bg-neutral-500 rounded-xl py-24 md:py-36">
       <motion.div
         ref={ref}
         initial="hidden"
@@ -100,7 +100,7 @@ const ProcessOutline = () => {
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0, transition: { duration: 1 } },
         }}
-        className="max-w-screen-2xl relative mx-auto flex flex-col md:flex-row gap-4"
+        className="max-w-screen-2xl px-4 md:px-12 relative mx-auto flex flex-col md:flex-row gap-4"
       >
         <div className="flex flex-col gap-2 flex-1 md:max-w-[70%]">
           <div className="sticky space-y-6 text-white top-24">

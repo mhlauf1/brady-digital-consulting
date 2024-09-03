@@ -110,7 +110,7 @@ const Services = () => {
       }}
       className="mt-8"
     >
-      <section className="max-w-screen-2xl px-4 md:px-8 flex-col py-24 md:py-36 mx-auto flex justify-between">
+      <section className="max-w-screen-2xl px-4 md:px-12 flex-col py-24 md:py-36 mx-auto flex justify-between">
         <h2>
           Optimization Services: <br />
           Maximize Your Amazon Presence
