@@ -22,7 +22,7 @@ const Hero = () => {
 
   return (
     <section
-      className="-z-100 overflow-x-hidden max-w-screen relative bg-cover md:mb-2 md:mx-2 md:rounded-xl bg-center h-[90vh]"
+      className="-z-100 overflow-x-hidden max-w-screen relative bg-cover md:mb-2 md:mx-2 md:rounded-xl bg-center h-auto"
       style={{ backgroundImage: "url('/hero-buildings.png')" }}
     >
       <div className="bg-black/70 absolute md:rounded-xl top-0  left-0 h-full right-0 bottom-0"></div>
@@ -52,7 +52,7 @@ const Hero = () => {
             Amazon Partners. Redefined.
           </h1>
           <HeroButtons />
-          <div className="md:pt-4 flex items-center justify-center mt-12 w-full text-neutral-200">
+          <div className="md:pt-4 flex items-center justify-center mt-12 mb-[13vh] w-full text-neutral-200">
             <p>
               Partnership-focused digital consulting services with proven
               results.
