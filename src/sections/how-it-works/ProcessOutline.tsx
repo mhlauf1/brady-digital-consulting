@@ -39,15 +39,7 @@ const processData = [
     id: "05",
     image: "/hiw-5.png",
     title: "Reporting",
-    description: `Transparency is key to our process. We provide detailed reporting to keep you informed about your brand's performance. Our comprehensive reports include metrics, insights, and analyses, allowing you to track progress and measure success with confidence.`,
-  },
-  {
-    id: "06",
-    image: "/hiw-6.png",
-    title: "Forecasting",
-    reserve: true,
-    description:
-      "To help you stay ahead, we offer detailed forecasting services. By analyzing trends and market data, we predict future performance and provide actionable recommendations. Enabling you to make informed decisions and plan strategically for sustained growth.",
+    description: `Our comprehensive reports include metrics, insights, analyses, and forecasts, allowing you to track progress, measure success, and plan out inventory with confidence.`,
   },
 ];
 
@@ -60,8 +52,7 @@ type ProcessProps = {
 
 const Process = ({ title, description, image, id }: ProcessProps) => (
   <div
-    className={`p-8  rounded-xl max-w-screen-2xl flex flex-col items-center gap-3  bg-gradient-to-r from-[#2a2a2a] to-[#404040] shadow-lg`}
-    style={{ boxShadow: "0 4px 20px rgba(0, 0, 0, 0.5)", borderRadius: "20px" }}
+    className={`p-8  rounded-xl max-w-screen-2xl flex flex-col items-center gap-3 shadow-lg bg-gradient-to-r from-neutral-700 to-neutral-600`}
   >
     <div className="flex items-center gap-3 flex-1">
       <div className="h-auto w-full md:w-[25vw]">
@@ -100,7 +91,7 @@ const ProcessOutline = () => {
     }
   }, [controls, inView]);
   return (
-    <section className="px-4 md:px-8 bg-[#313131] rounded-xl py-24 md:py-36">
+    <section className="px-4 md:px-8 bg-neutral-500 rounded-xl py-24 md:py-36">
       <motion.div
         ref={ref}
         initial="hidden"
@@ -113,7 +104,7 @@ const ProcessOutline = () => {
       >
         <div className="flex flex-col gap-2 flex-1 md:max-w-[70%]">
           <div className="sticky space-y-6 text-white top-24">
-            <span className="border  border-white/10 py-1 text-sm text-neutral-400 px-4 rounded-full">
+            <span className="border  border-white/10 py-1 text-sm text-neutral-300 px-4 rounded-full">
               Our Process
             </span>
             <h2>
