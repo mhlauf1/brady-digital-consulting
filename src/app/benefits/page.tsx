@@ -4,7 +4,11 @@ import WhyBrady from "@/sections/benefits/WhyBrady";
 import Stats from "@/sections/benefits/Stats";
 import CaseStudies from "@/sections/benefits/CaseStudies";
 import CTA from "@/components/CTA";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Benefits",
+};
 const BenefitsPage = () => {
   return (
     <main>
