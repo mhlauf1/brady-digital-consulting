@@ -35,7 +35,7 @@ type ExperienceProps = {
 };
 
 const ExperienceItem = ({ title, description, icon }: ExperienceProps) => (
-  <div className="bg-white p-6 md:p-8 rounded-xl flex flex-col gap-2 md:gap-3">
+  <div className="bg-white p-6 md:p-8 rounded-xl h-full flex flex-col gap-2 md:gap-3">
     <div className="h-[32px] w-[32px]">
       <Image
         src={icon}
