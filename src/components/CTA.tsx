@@ -16,7 +16,7 @@ const CTA = () => {
           expert strategies and personalized support can make. Contact us now to
           unlock your brand&apos;s full potential.
         </p>
-        <div className="relative z-50">
+        <div className="relative z-20">
           <a
             href="mailto:sbrady@bradydigitalconsulting.com"
             className="bg-white relative text-neutral-800 items-center rounded-full shadow-sm hover:scale-[101%] text-sm md:text-md transition  flex gap-4  md:px-12 px-6 py-3 md:py-5"

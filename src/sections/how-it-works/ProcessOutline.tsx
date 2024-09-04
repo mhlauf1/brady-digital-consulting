@@ -91,7 +91,7 @@ const ProcessOutline = () => {
     }
   }, [controls, inView]);
   return (
-    <section className=" bg-neutral-500 rounded-xl py-24 md:py-36">
+    <section className="bg-neutral-500 mt-12 rounded-xl py-24 md:py-36">
       <motion.div
         ref={ref}
         initial="hidden"
