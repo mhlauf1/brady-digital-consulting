@@ -28,7 +28,7 @@ const Hero = () => {
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 1 } },
       }}
-      className="relative px-12  max-w-screen-2xl mx-auto h-auto py-12 md:py-24"
+      className="relative px-12  max-w-screen-2xl mx-auto h-auto pt-6 pb-12 md:py-24"
     >
       <div className="flex gap-16 mt-16 md:mt-0 flex-col md:flex-row items-center h-full">
         <div className="flex flex-col items-center md:items-start">
