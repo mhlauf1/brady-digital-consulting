@@ -17,7 +17,7 @@ const Hero = () => {
     }
   }, [controls, inView]);
   return (
-    <section className="relative pt-20 md:pt-24 md:h-[60vh] md:mx-2 md:rounded-xl overflow-hidden h-[65vh]">
+    <section className="relative py-20 md:py-24 md:h-auto md:mx-2 md:rounded-xl overflow-hidden h-[65vh]">
       <Image
         src="/about-hero.png"
         alt="About Page Brady Digital"
