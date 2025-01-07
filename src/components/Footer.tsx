@@ -37,7 +37,7 @@ const Footer = () => {
 
       <div className="flex flex-col items-center gap-2">
         <p className="text-neutral-500  text-xs  text-center md:text-left">
-          &copy; Brady Digital Consulting 2024. All rights reserved.
+          &copy; Brady Digital Consulting 2025. All rights reserved.
         </p>
         <p className="text-neutral-500  text-xs  text-center md:text-left">
           Designed and developed by{" "}
