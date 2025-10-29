@@ -47,13 +47,13 @@ const Hero = () => {
         </p>
         <div className="h-auto mt-20 md:mt-12 w-[80vw] md:w-[50vw]">
           <Image
-            src="/services-sub.png"
+            src="/serv-replace.jpg"
             alt="Brady Services"
             layout="responsive"
             width={100}
             height={100}
             objectFit="cover"
-            objectPosition="top"
+            className="rounded-3xl"
           />
         </div>
       </motion.div>
