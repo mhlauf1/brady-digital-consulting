@@ -53,23 +53,9 @@ const Services = () => {
           </div>
         </div>
         <div className="h-auto w-full relative mx-auto lg:w-[40%]">
-          {/* Semi-transparent black overlay */}
-          <div className="absolute inset-0 bg-black/30 rounded-3xl z-5"></div>
-
-          {/* Centered overlay logo */}
-          <div className="absolute inset-0 flex justify-center items-center z-10">
-            <Image
-              src="/brady-footer-logo.png"
-              alt="Brady Services"
-              width={200}
-              height={100}
-              className="object-contain"
-            />
-          </div>
-
           {/* Background image */}
           <Image
-            src="/image-2-replacement.jpg"
+            src="/amazon-1.png"
             alt="Brady Services"
             layout="responsive"
             className="rounded-3xl object-cover"

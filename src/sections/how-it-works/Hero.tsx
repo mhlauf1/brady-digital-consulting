@@ -51,7 +51,7 @@ const Hero = () => {
 
         <div className="h-auto md:mt-12 w-[90vw] md:w-[50vw]">
           <Image
-            src="/hiw-replacement.jpg"
+            src="/how-it-works.png"
             alt="Brady Services"
             layout="responsive"
             className="rounded-xl"

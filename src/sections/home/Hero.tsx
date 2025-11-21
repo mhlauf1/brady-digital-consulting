@@ -23,7 +23,7 @@ const Hero = () => {
   return (
     <section
       className="-z-100 overflow-x-hidden max-w-screen relative bg-cover md:mb-2 md:mx-2 md:rounded-xl bg-center h-auto"
-      style={{ backgroundImage: "url('/hero-replacementjpg.jpg')" }}
+      style={{ backgroundImage: "url('/hero-buildings.png')" }}
     >
       <div className="bg-black/70 absolute md:rounded-xl top-0  left-0 h-full right-0 bottom-0"></div>
       <motion.div
