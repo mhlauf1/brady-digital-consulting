@@ -49,7 +49,7 @@ const Hero = () => {
           </Link>
 
           <h1 className="lg:w-[16ch] home-heading font-instrument my-12">
-            Amazon Partners. Redefined.
+            Digital Partners. Redefined.
           </h1>
           <HeroButtons />
           <div className="md:pt-4 flex items-center justify-center mt-12 mb-[13vh] w-full text-neutral-200">

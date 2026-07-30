@@ -55,8 +55,8 @@ const Services = () => {
         <div className="h-auto w-full relative mx-auto lg:w-[40%]">
           {/* Background image */}
           <Image
-            src="/amazon-1.png"
-            alt="Brady Services"
+            src="/services-dashboard.jpg"
+            alt="Ecommerce performance dashboard on a laptop"
             layout="responsive"
             className="rounded-3xl object-cover"
             width={100}
