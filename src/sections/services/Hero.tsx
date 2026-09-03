@@ -45,10 +45,10 @@ const Hero = () => {
           Unlock Your Brand&apos;s Potential with Our Full-Spectrum Ecommerce
           Solutions{" "}
         </p>
-        <div className="h-auto mt-20 md:mt-12 w-[80vw] md:w-[50vw]">
+        <div className="h-auto mt-20 md:mt-12 w-[80vw] md:w-[50vw] rounded-xl overflow-hidden border-4 border-white">
           <Image
-            src="/services-sub.png"
-            alt="Brady Services"
+            src="/serv-replace.jpg"
+            alt="City skyline at sunrise representing Brady Digital's full-spectrum ecommerce services"
             layout="responsive"
             width={100}
             height={100}
